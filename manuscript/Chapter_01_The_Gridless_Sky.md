@@ -80,7 +80,7 @@ He stood behind Ryan’s chair for nearly two minutes, watching the raw baseband
 
 "For what? To prove that Einstein was wrong?" Harrison took off his gloves and set his thermos on the corner of the desk. "Ryan, you had a brilliant career ahead of you at the department. Your interferometry work on the Naval Prototype Optical Interferometer was cited eighty times before you turned thirty. But this... this obsession with pregeometry and relational computers. You’re committing professional suicide."
 
-"Look at the screen, Richard," Ryan said, gesturing to the monitor.
+"I am not trying to prove Einstein was wrong, Richard. Einstein was *right*," Ryan said, turning to the secondary display. "General Relativity proved that spacetime isn't an absolute container—it's an invariant web of relations, proper times, and physical clocks. What I'm tearing down is our lazy habit of smuggling empirical fudge factors and coordinate crutches into the software to force an artificial fit. Look at the screen."
 
 Harrison sighed, leaning in reluctantly.
 

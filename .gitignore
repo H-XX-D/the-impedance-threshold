@@ -20,3 +20,8 @@ tools/__pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Private CislunarOS research & architectures
+*cislunaros*
+*CislunarOS*
+research_briefs/
