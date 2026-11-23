@@ -1,0 +1,22 @@
+# LaTeX intermediate files
+build_pdf/*.aux
+build_pdf/*.log
+build_pdf/*.out
+build_pdf/*.toc
+build_pdf/*.xdv
+build_pdf/*.fls
+build_pdf/*.fdb_latexmk
+build_pdf/book.pdf
+
+# Python caches
+__pycache__/
+*.py[cod]
+tools/__pycache__/
+
+# Backups
+*_backup*
+*.bak*
+
+# OS files
+.DS_Store
+Thumbs.db
