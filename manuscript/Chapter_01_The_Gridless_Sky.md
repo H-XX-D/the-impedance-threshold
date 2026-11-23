@@ -36,15 +36,34 @@ For a century, theoretical physics had operated on a comfortable, unchallenged a
 
 Ryan opened his spiral notebook, bound in oil-stained cardboard, its pages filled with dense ink derivations.
 
-"The fabric is an illusion," he whispered to the empty glass of the window.
+"The container is an illusion," he whispered to the empty glass of the window. "Einstein knew it when he formulated Mach's principle: spacetime has no independent existence. Space in its underlying condition is zero-dimensional and nonlocal."
 
-At the top of the page, he wrote down the fundamental constant that standard textbooks relegated to a footnote:
+He turned to the foundational derivation he had worked out across months of sleepless nights: the **Nested-Reciprocity Source Law** $S_{\rm pre}^{\rm NR}$.
+
+If space has no pre-existing coordinates or metric distances, how does an experienced three-dimensional universe emerge? On the graph paper, Ryan sketched the discrete object: a finite, unlabelled set $D$ of primitive reversible excitation types, and its unordered binary spans $P_2(D) = \binom{D}{2}$. Between the excitations and the spans lay a partial transverse matching $M$: each matched excitation was paired strictly outside its span.
+
+He wrote down the exact reciprocity defect:
+$$\Delta(D, M) = (n - m) + \left( \binom{n}{2} - m \right)$$
+measuring the number of unmatched primitive excitations plus unmatched spans, where $n = |D|$ and $m = |M|$.
+
+Then, the fundamental activity action:
+$$S_{\rm pre}^{\rm NR}(D, M) = \lambda \, \Delta(D, M) - h \, n$$
+
+"In any physical state where the activity parameter lies in the open window $0 < h < 2\lambda$," Ryan murmured, underlining the inequality, "there is only one unique ground state up to relabelling. Not two dimensions. Not ten. Exactly rank three: $|D| = 3$, with the complete complement matching."
+
+The excitation gap was exact: $\Delta E = \min(3h, 2\lambda - h)$. Under least endpoint completion and a centered unit-rate response, the selected carrier yielded the exact word-ball count:
+$$V_3(R) = \frac{4R^3 + 6R^2 + 8R + 3}{3}$$
+a return probability $P(t) = e^{-t} I_0(t/3)^3$, a spectral dimension of precisely three ($d_s = 3$), and a single infrared co-metric tensor $q^\sharp = \frac{1}{3}\sum_{d \in D} d \otimes d$.
+
+Three spatial dimensions was not an arbitrary cosmic accident or an unexplained axiom. It was the unique ground state of transverse reciprocity.
+
+At the bottom of the page, he wrote down the fundamental impedance constant that standard textbooks relegated to a footnote:
 
 $$Z_H = \frac{c^3}{G} \approx 4.037 \times 10^{35} \text{ N}$$
 
 The Planck force. The causal impedance of free space. It had the dimensions of pure mechanical tension: kilograms meters per second squared. A force of four hundred billion billion billion billion newtons.
 
-If spacetime were an elastic continuum, it was a continuum so impossibly stiff that an entire star cluster could barely produce a microscopic dimple in its surface. But if spacetime was not a medium at all—if spacetime was merely the statistical residue of causal information exchange—then $Z_H$ was not an elastic constant. It was the transmission channel impedance.
+If spacetime were an elastic continuum, it was a continuum so impossibly stiff that an entire star cluster could barely produce a microscopic dimple in its surface. But if spacetime was not an elastic medium at all—if distance was merely the inferred measurement of causal impedance between physical clocks—then $Z_H$ was not a spring constant. It was the transmission channel impedance.
 
 He turned to the Margolus-Levitin theorem of quantum computation.
 
@@ -62,7 +81,7 @@ $$n(r) = 1 + \frac{2GM}{c^2 r}$$
 
 Under standard general relativity, this term appeared as the Shapiro time delay: the time dilation of a radio pulse passing near a massive star, interpreted as the bending of geodesics in Schwarzschild spacetime.
 
-"It isn't geometry bending," Ryan said, tracing his pen along the formula until the paper indented. "It is impedance matching. When relational nodes exchange signals across a region of dense computational load, the channel latency rises. Mass is not something that sits inside space. Mass is the density of relational updates. The more updates you demand per unit volume, the longer each neighboring relation takes to complete its cycle."
+"It isn't geometry bending in a background void," Ryan said, tracing his pen along the formula until the paper indented. "It is impedance matching. Einstein was right about the relational nature of time and space. When relational nodes exchange signals across a region of dense computational load, the channel latency rises. Mass is not something that sits inside space. Mass is the density of relational updates. The more updates you demand per unit volume, the longer each neighboring relation takes to complete its cycle."
 
 ---
 

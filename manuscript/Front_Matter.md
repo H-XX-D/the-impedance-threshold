@@ -27,26 +27,28 @@
 
 ---
 
-## PREFACE: ON THE FALLACY OF THE BACKGROUND CONTAINER
+## PREFACE: ON THE RELATIONAL FOUNDATIONS OF SPACETIME
 
-For three centuries, theoretical physics operated under a convenient mathematical delusion: that space is an empty, pre-existing container, a Cartesian stage upon which the drama of matter and radiation unfolds.
+For three centuries, classical mechanics operated under a convenient mathematical crutch: that space is an empty, pre-existing container, a Cartesian stage upon which the drama of matter and radiation unfolds.
 
-Sir Isaac Newton called it absolute space—an immovable, infinite sensorium of God. Albert Einstein shattered absolute space by showing that the geometry of the container is dynamic, bent and dragged by mass and energy. Yet even in general relativity, the container survived. Spacetime remained a continuous four-dimensional pseudo-Riemannian manifold, endowed with a metric tensor $g_{\mu\nu}$ defined at every smooth, infinite point between particles.
+Sir Isaac Newton called it absolute space—an immovable, infinite sensorium. Albert Einstein shattered that illusion. General Relativity proved that spacetime has no independent existence apart from physical relations, proper times, and clocks. **Einstein was right.** Geometry is dynamic, and space and time are relational.
 
-When quantum field theory was laid over this geometry, the crisis became unmanageable. In quantum mechanics, physical observables are discrete operators evaluated between states. In general relativity, spacetime is smooth and continuous. To force them together, twentieth-century physics invented mathematical scaffoldings of breathtaking complexity: ten-dimensional vibrating superstrings, twelve-parameter cosmological inflation fields, supersymmetry, and dark energy components tuned to one hundred and twenty decimal places.
+Yet over the ensuing century, applied physics and flight software quietly drifted back into classical habits. Practitioners treated coordinate grids as physical substances. When complex orbital mechanics or quantum field theories collided with noisy observations, engineers and theorists added empirical fudge factors, smuggled parameters, and artificial background grids to force a fit. Whenever an unexpected trajectory anomaly occurred—a covariance starvation collapse in an onboard filter, or an unexplained clock drift near a lunar Lagrange point—software tuned process noise matrices rather than trusting relational physics.
 
-Whenever a space mission encountered an unexpected trajectory anomaly—a non-gravitational flyby acceleration, a numerical covariance collapse in an onboard Kalman filter, or an unexplained clock drift near a lunar Lagrange point—engineers added another empirical fudge factor to their ground software. They tuned the process noise covariance matrix $Q$. They added empirical ballistic coefficients. They treated the discrepancy as sensor noise or outgassing.
+Quantum Relational Causality (QRC) returned to first principles, making relational physics make sense without smuggled parameters:
 
-They never questioned the container.
+> **The Foundational Principle:**  
+> Space in its underlying condition is zero-dimensional and nonlocal; particle fields are one-dimensional excitations; electromagnetic excitations are two-dimensional; and their composition supports the experienced three-dimensional world, retaining its lower-dimensional constituents, with time as the fourth dimension encompassing its history. The limiting causal-update and propagation role is assigned to $c$.
+>
+> **The Measurement Law:**  
+> Distance is the inferred measurement of causal impedance. Causal impedance does not cause a separate quantity or substance called distance.
 
-Quantum Relational Causality (QRC) began with a radically simpler, uncompromising premise: **the universe contains no background grid.** 
-
-Space does not exist between things that do not interact. There is no empty coordinate $(x, y, z)$ waiting to be traversed. Distance is not a geometric separation; distance is the physical, measurable impedance of causal interaction between discrete physical clocks. Where there is no interaction, there is no metric. Where there are no clocks, there is no time.
+Where there is no interaction, there is no metric. Where there are no clocks, there is no time.
 
 When an astrodynamicist computes an interplanetary trajectory through relational Jacobi coordinates instead of a fictional solar-system barycentric Cartesian origin, the three-body problem ceases to be an unresolvable chaotic singularity. It becomes a closed causal network. When flight navigation software drops the assumption of an external coordinate frame and navigates strictly by the causal phase shifts of celestial pulsars and local Sagnac interferometry, the navigation equations shrink by four orders of magnitude.
 
 This book is the history of that realization.
 
-It began not in a multi-billion-dollar aerospace conglomerate, but in the damp limestone chill of a Tennessee subterranean vault, in the four-hundred-dollar edge compute partitions of an independent researcher, and in the frozen silence of the Jovian radiation belts. It is the story of how humanity stopped drawing imaginary grids across the sky, and learned to touch the stars through the physical impedance of reality itself.
+It began not in a multi-billion-dollar aerospace conglomerate, but in the damp limestone chill of a Virginia subterranean vault, in the four-hundred-dollar edge compute partitions of an independent researcher, and in the frozen silence of the Jovian radiation belts. It is the story of how humanity stopped drawing imaginary grids across the sky, and learned to navigate the cosmos through the physical impedance of reality itself.
 
 ---

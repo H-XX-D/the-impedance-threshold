@@ -140,33 +140,74 @@ void householder_srif_update(SRIFState& state,
 ---
 
 ## DIEGETIC EXHIBIT B: FORMAL MATHEMATICAL DERIVATION OF 0D PREGEOMETRY
-### The Margolus-Levitin Bound & The Relational Impedance $Z_H$
+### The Nested-Reciprocity Source Law $S_{\rm pre}^{\rm NR}$ & Relational Impedance $Z_H$
 
-### 1.0 FIRST-PRINCIPLES CAUSAL ORTHOGONALIZATION
-Let $|\psi(0)\rangle$ be an arbitrary quantum state in a Hilbert space $\mathcal{H}$ evolving under a time-independent Hamiltonian $\hat{H} \ge 0$, such that the ground-state energy is set to zero. The state at time $t$ is:
-$$|\psi(t)\rangle = \exp\left(-\frac{i \hat{H} t}{\hbar}\right) |\psi(0)\rangle$$
+### 1.0 THE 0D SOURCE GROUPOID & TRANSVERSE RECIPROCITY
+Let space in its underlying condition be zero-dimensional and nonlocal. We define a pregeometric configuration as a pair $(D, M)$ on a source groupoid:
+1. $D$ is a finite unlabelled set of primitive reversible excitation types, with cardinality $n = |D|$.
+2. $P_2(D) = \binom{D}{2}$ is the set of all unordered binary spans (every pair is present).
+3. $M \subseteq D \times P_2(D)$ is a partial matching, injective in both projections, with cardinality $m = |M|$.
+4. Every matched pair is **transverse**:
+   $$(d, p) \in M \implies d \notin p$$
 
-The overlap amplitude between the initial state and the evolved state is:
-$$S(t) = \langle \psi(0) | \psi(t)\rangle = \int_0^\infty \exp\left(-\frac{i E t}{\hbar}\right) dP(E)$$
-where $dP(E)$ is the spectral probability measure of the Hamiltonian. 
+The empty object $D = \varnothing$ represents the undifferentiated 0D condition: it possesses no moves, no adjacencies, and no metric distance. The relational grades $\Lambda^0, \dots, \Lambda^3$ of $\mathbb{R}[D]$ (undifferentiated condition, primitive excitation, coupled binary span, transverse interleaving) form an increasing filtration, retaining all lower-dimensional constituents.
 
-Following the Margolus-Levitin theorem (1998), the system attains an orthogonal state $\langle \psi(0) | \psi(\Delta t)\rangle = 0$ only when the real part of $S(\Delta t)$ vanishes:
-$$\text{Re}(S(\Delta t)) = \int_0^\infty \cos\left(\frac{E \Delta t}{\hbar}\right) dP(E) = 0$$
+### 2.0 THE NESTED-RECIPROCITY SOURCE LAW
+The reciprocity defect $\Delta(D, M)$ measures the sum of unmatched primitive excitations plus unmatched binary spans:
+$$\Delta(D, M) = (n - m) + \left( \binom{n}{2} - m \right)$$
 
-Using the trigonometric inequality $\cos x \ge 1 - \frac{2}{\pi}(x + \sin x)$ for $x \ge 0$:
-$$0 = \int_0^\infty \cos\left(\frac{E \Delta t}{\hbar}\right) dP(E) \ge 1 - \frac{2}{\pi} \frac{\Delta t}{\hbar} \int_0^\infty E dP(E) - \frac{2}{\pi} \int_0^\infty \sin\left(\frac{E \Delta t}{\hbar}\right) dP(E)$$
+For coupling constants $\lambda > 0$ and activity parameter $h \in \mathbb{R}$, the pregeometric action is defined by:
+$$S_{\rm pre}^{\rm NR}(D, M) = \lambda \, \Delta(D, M) - h \, n$$
 
-Since the imaginary part of the overlap must also vanish for an orthogonal state, the sine integral is zero, yielding:
+The groupoid partition function across all isomorphism classes is:
+$$Z_\beta = \sum_{n \ge 0} \frac{1}{n!} \sum_{M} \exp\left( -\beta S_{\rm pre}^{\rm NR}([n], M) \right)$$
+where each class is weighted by $1 / |\operatorname{Aut}(D, M)|$.
+
+### 3.0 THE RANK-THREE SELECTION THEOREM
+**Theorem (Rank-3 Ground State Selection):**  
+*In the open activity window $0 < h < 2\lambda$, the unique ground state minimizing $S_{\rm pre}^{\rm NR}$ up to relabelling has rank $n = |D| = 3$ with the complete complement matching ($m = 3$), with an exact excitation energy gap:*
+$$\Delta E = \min(3h, 2\lambda - h)$$
+
+*Proof Summary:*  
+For $n = 3$, the binary spans are $\binom{3}{2} = 3$ pairs: $\{1,2\}, \{2,3\}, \{3,1\}$. The unique transverse matching pairs each element with the opposite span: $1 \leftrightarrow \{2,3\}$, $2 \leftrightarrow \{3,1\}$, and $3 \leftrightarrow \{1,2\}$. Thus $m = 3$, yielding zero defect:
+$$\Delta(3, 3) = (3 - 3) + (3 - 3) = 0 \implies S_{\rm pre}^{\rm NR} = -3h$$
+For any $n \neq 3$, the defect $\Delta(n, m) \ge 1$, which adds a penalty $\ge \lambda$. In the window $0 < h < 2\lambda$, all competing configurations have strictly higher action, establishing rank 3 as the isolated, stable ground state of the universe. $\blacksquare$
+
+### 4.0 THE CUBIC-DIFFUSIVE SPATIAL PHASE
+Under least endpoint completion and a centered unit-rate walk on the selected rank-3 carrier, the operational properties of physical three-dimensional space emerge without coordinates:
+1. **Exact Word-Ball Volume:**
+   $$V_3(R) = \frac{4R^3 + 6R^2 + 8R + 3}{3}$$
+2. **Heat Kernel Return Probability:**
+   $$P(t) = e^{-t} I_0(t/3)^3$$
+3. **Spectral Dimension:**
+   $$d_s = -2 \lim_{t \to \infty} \frac{d \ln P(t)}{d \ln t} \equiv 3$$
+4. **Infrared Co-Metric Tensor:**
+   $$q^\sharp = \frac{1}{3} \sum_{d \in D} d \otimes d$$
+
+Three-dimensional space is therefore an emergent operational property of the rank-3 ground state of transverse reciprocity.
+
+### 5.0 INTERNAL GAUGE CARRIER & CHIRAL FAMILIES
+On a Hermitian $2+3$ internal carrier with a single determinant record, the stabilizer group is:
+$$S(U(2) \times U(3)) = \frac{SU(2) \times SU(3) \times U(1)}{\mathbb{Z}_6}$$
+recovering the exact Standard Model gauge structure. The exterior algebra decomposition yields one anomaly-free 15-state chiral fermion family, while the pair-dual anomaly polynomial:
+$$\mathcal{P}(m, n) = (m + n - 5) \operatorname{ch}_3(E)$$
+selects internal ranks $m=2, n=3$ within its own hypotheses.
+
+### 6.0 CAUSAL IMPEDANCE & GENERAL RELATIVITY
+Following the Margolus-Levitin theorem (1998), an ensemble of quantum states cannot evolve to an orthogonal distinguishable state in a time interval shorter than:
 $$\Delta t \ge \frac{\pi \hbar}{2 \langle E \rangle}$$
 
-### 2.0 CAUSAL IMPEDANCE DERIVATION
-Now consider two causal nodes $A$ and $B$ separated by an informational channel of capacity limited by the Planck energy $E_P = \sqrt{\hbar c^5 / G}$. The maximum rate of orthogonal relational state transitions per unit time across the channel is:
-$$\nu_{\max} = \frac{1}{\Delta t_{\min}} = \frac{2 E_P}{\pi \hbar} = \frac{2}{\pi} \sqrt{\frac{c^5}{\hbar G}}$$
+At the Planck energy $E_P = \sqrt{\hbar c^5 / G}$, the maximum causal orthogonalization rate across an informational channel is:
+$$\nu_{\max} = \frac{1}{\Delta t_{\min}} = \frac{2}{\pi} \sqrt{\frac{c^5}{\hbar G}}$$
 
-The relational transmission impedance $Z_H$ of the channel is defined as the ratio of energy flow rate $\dot{E} = E_P \nu_{\max}$ to the linear momentum flux $\dot{p} = \dot{E} / c$:
-$$Z_H = \frac{F_{\text{relativistic}}}{\text{impedance matching}} = \frac{c^3}{G} \approx 4.037 \times 10^{35} \text{ N}$$
+The relational transmission impedance of the channel is:
+$$Z_H = \frac{c^3}{G} \approx 4.037 \times 10^{35} \text{ N}$$
 
-Thus, gravitational phenomena do not represent the smooth bending of an elastic geometric continuum, but the informational latency of causal state transitions mediated by a finite transmission impedance $Z_H$.
+**The Governing Measurement Principle:**
+$$d_P(a, b) := \mathcal{M}_P[Z_H; a, b]$$
+*Distance is the inferred measurement of causal impedance. Causal impedance does not cause a separate substance called distance.*
+
+**Einstein Was Right:** General Relativity proved that spacetime has no independent existence apart from physical relations, proper times, and clocks. Gravitational time dilation and Shapiro delay do not represent an elastic fabric bending in a void, but the physical causal impedance matching of relational clock networks.
 
 ---
 
