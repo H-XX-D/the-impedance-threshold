@@ -32,7 +32,7 @@ Yet the mission reveals a sobering cosmological reality: the **Impedance Thresho
 - **EPUB Edition**: [`The_Impedance_Threshold.epub`](The_Impedance_Threshold.epub)
   - Validated for Apple Books, Kindle, Kobo, and e-readers.
 - **Companion Astrodynamics Framework**: [H-XX-D/qrc-pulsar-benchmark](https://github.com/H-XX-D/qrc-pulsar-benchmark)
-  - 453 passing unit tests verifying cislunar forces, layered autonomous flight controllers, Jacobi shape coordinates, and physical Roemer pulsar timing delay models.
+  - 439 passing unit tests verifying cislunar forces, predictive MPC, Jacobi shape coordinates, and physical Roemer pulsar timing delay models.
 
 ---
 

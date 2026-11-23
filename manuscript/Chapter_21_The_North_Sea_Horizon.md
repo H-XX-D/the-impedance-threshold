@@ -66,7 +66,7 @@ Ryan leaned close to the tablet, his breath catching in his throat.
 
 Elena smiled, a deep, triumphant smile that mirrored her father’s thirty years earlier.
 
-"No Cartesian background coordinates," Elena said. "No barycentric ephemeris tables. Zero floating-point covariance matrices. The ship navigates strictly by the causal phase delays of seventy-two millisecond pulsars and local Sagnac optical ring-laser interferometry. It uses CislunarOS Revision 44."
+"No Cartesian background coordinates," Elena said. "No barycentric ephemeris tables. Zero floating-point covariance matrices. The ship navigates strictly by the causal phase delays of seventy-two millisecond pulsars and local Sagnac optical ring-laser interferometry. It uses ArgonautOS Revision 44."
 
 She reached out and took her father’s hand, her fingers warm against his weathered skin.
 

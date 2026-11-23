@@ -30,7 +30,7 @@ Ryan leaned over the console. "Broadband thermal solar noise is flooding the low
 
 Marcus reached up and toggled the transponder breaker to `STANDBY`. "Nobody navigates the cislunar corridor without ground tracking, Ryan. If our state vector drifts by fifty meters per second, we'll miss the Moon's capture corridor and swing into an unrecoverable heliocentric orbit."
 
-"We're not using ground tracking," Ryan said, typing into the CislunarOS command shell. "Unstow the X-ray pulsar array."
+"We're not using ground tracking," Ryan said, typing into the ArgonautOS command shell. "Unstow the X-ray pulsar array."
 
 On the dorsal hull of *Argonaut*, four silicon-drift X-ray detectors unlatched from their launch locks and oriented toward deep space.
 
@@ -137,7 +137,7 @@ Ten minutes later, the airlock repressurized with a soft roar of air. Marcus cli
 
 "Leak is stopped," Marcus said, strapping back into the left couch. "But we're still rotating at two point eight degrees per second. How do we damp the spin without wasting hydrazine?"
 
-Ryan pulled up the CislunarOS guidance terminal.
+Ryan pulled up the ArgonautOS guidance terminal.
 
 "We use the Moon's gravity gradient," Ryan said.
 
@@ -147,7 +147,7 @@ Ryan pulled up the CislunarOS guidance terminal.
 
 $$\boldsymbol{\tau}_{\text{tidal}} = \frac{3GM_{\text{Moon}}}{r^3} \hat{\mathbf{r}} \times (\mathbf{I} \cdot \hat{\mathbf{r}})$$
 
-"By modulating our internal magnetic torquer coils against the weak interplanetary magnetic field, CislunarOS can use that tidal torque as a brake. It will take forty-five minutes, but it costs zero kilograms of propellant."
+"By modulating our internal magnetic torquer coils against the weak interplanetary magnetic field, ArgonautOS can use that tidal torque as a brake. It will take forty-five minutes, but it costs zero kilograms of propellant."
 
 Marcus leaned back in his couch, watching the yaw rate indicator begin its slow, steady decline: 2.8... 2.4... 1.9...
 
@@ -284,21 +284,21 @@ Marcus Thorne leaned over Ryan's shoulder, checking the closing velocity. "Ryan,
 
 "Initiating direct binary injection," Ryan said.
 
-He triggered the CislunarOS hot-graft script:
+He triggered the ArgonautOS hot-graft script:
 
-`CISLUNAR_OS_INJECTION: INITIATED`  
+`ARGONAUT_OS_INJECTION: INITIATED`  
 `TARGET: PROMETHEUS_PAYLOAD_FPGA_BUS_B`  
 `KERNEL: cFS_DRACO_SRIF_V7.0.1`  
 `COVARIANCE_RECOVERY: SQUARE_ROOT_JOSEPH_FORM`  
 `VERIFIER: DIVERSE_CARTESIAN_INDEPENDENT_CHECK`  
 
-Across six hundred kilometers of vacuum, the compiled binary of CislunarOS streamed over the optical laser beam. Bypassing the locked central processor, the code flashed directly into the static RAM of *Prometheus*’s payload FPGA—the high-speed instrument controller normally reserved for lunar surface experiments.
+Across six hundred kilometers of vacuum, the compiled binary of ArgonautOS streamed over the optical laser beam. Bypassing the locked central processor, the code flashed directly into the static RAM of *Prometheus*’s payload FPGA—the high-speed instrument controller normally reserved for lunar surface experiments.
 
 On *Prometheus*’s instrument panel, the amber caution banners flickered, dimmed, and extinguished.
 
 In their place, clean cyan telemetry lines populated the primary display:
 
-`SYSTEM_BOOT: CISLUNAR_OS_RELATIONAL_CORE`  
+`SYSTEM_BOOT: ARGONAUT_OS_RELATIONAL_CORE`  
 `ESTIMATOR: 18_STATE_JACOBI_RELATIONAL_EKF`  
 `FILTER_INTEGRITY: SQUARE_ROOT_VERIFIED`  
 `INNOVATION_NIS: 0.82 (NOMINAL)`  

@@ -201,7 +201,7 @@ The outer airlock hatch slammed shut. The airlock hissed as cabin air repressuri
 
 "The leak is stopped," Marcus said, collapsing into the pilot's couch. "And I'm still breathing. But we're still tumbling at four degrees per second. How do we kill the spin without burning our remaining hydrazine?"
 
-Ryan smiled, his fingers typing rapidly into the CislunarOS command shell. "We don't use propellant. We use the Moon."
+Ryan smiled, his fingers typing rapidly into the ArgonautOS command shell. "We don't use propellant. We use the Moon."
 
 "The Moon?" Marcus frowned. "We're eighty thousand kilometers away!"
 
@@ -209,7 +209,7 @@ Ryan smiled, his fingers typing rapidly into the CislunarOS command shell. "We d
 
 $$\boldsymbol{\tau}_{\text{tidal}} = \frac{3GM_{\text{Moon}}}{r^3} \hat{\mathbf{r}} \times (\mathbf{I} \cdot \hat{\mathbf{r}})$$
 
-"By executing micro-adjustments with our magnetic torquer coils against the interplanetary magnetic field, CislunarOS can harvest that tidal torque. In forty-five minutes, the Moon's own gravity will damp our spin to zero."
+"By executing micro-adjustments with our magnetic torquer coils against the interplanetary magnetic field, ArgonautOS can harvest that tidal torque. In forty-five minutes, the Moon's own gravity will damp our spin to zero."
 
 Marcus watched the telemetry display in stunned silence as the rotation rate began to smooth out, dropping tenth by tenth of a degree.
 
@@ -338,7 +338,7 @@ Inside the cockpit of *Argonaut*, flying six hundred kilometers behind the stric
 
 *"Loud and clear, Ryan!"* Elena Rostova's voice sounded through the speakers, vibrant with relief yet taut with tension. *"We have eighty-two minutes before perilune. We are descending toward the farside at twenty-two hundred meters per second. The cabin is freezing, and our flight software is locked down solid."*
 
-"I see your registers," Ryan said, his fingers flying across his keyboard as he prepared the CislunarOS payload injection. "Hastings's code is completely locked in the `PROTECTIVE_SCREENED_COAST` state machine. The CPU is looping in a watchdog trap because the single-precision covariance matrix has negative eigenvalues on the diagonal."
+"I see your registers," Ryan said, his fingers flying across his keyboard as he prepared the ArgonautOS payload injection. "Hastings's code is completely locked in the `PROTECTIVE_SCREENED_COAST` state machine. The CPU is looping in a watchdog trap because the single-precision covariance matrix has negative eigenvalues on the diagonal."
 
 *"Can you clear the fault register from there?"* Elena asked.
 
@@ -352,19 +352,19 @@ Marcus Thorne leaned over Ryan's shoulder, his eyes fixed on the relative trajec
 
 He engaged the primary execution script:
 
-`CISLUNAR_OS_HOT_GRAFT: INITIATED`  
+`ARGONAUT_OS_HOT_GRAFT: INITIATED`  
 `TARGET: PROMETHEUS_AVIONICS_BUS_B`  
 `INJECTING: KERNEL_SRIF_V5.4 (MONTGOMERY_SHAPE_SOLVER)`  
 `MEMORY_OVERWRITE: 0x80000000 - 0x8FFFFFFF`  
 `VERIFIER: CARTESIAN_INDEPENDENT_PARALLEL_CHECK`  
 
-Across the six-hundred-kilometer gap of deep space, the compiled binary of CislunarOS streamed over the optical laser beam. It bypassed the locked RAD750 central processor and flashed directly into the static RAM of *Prometheus*’s payload FPGA—the high-speed instrument controller normally reserved for lunar surface experiments.
+Across the six-hundred-kilometer gap of deep space, the compiled binary of ArgonautOS streamed over the optical laser beam. It bypassed the locked RAD750 central processor and flashed directly into the static RAM of *Prometheus*’s payload FPGA—the high-speed instrument controller normally reserved for lunar surface experiments.
 
 On *Prometheus*’s instrument panel, the dead amber warning lights flickered, dimmed, and extinguished.
 
 In their place, crisp, high-contrast cyan displays sprang to life:
 
-`SYSTEM REBOOT: CISLUNAR_OS_RELATIONAL_CORE`  
+`SYSTEM REBOOT: ARGONAUT_OS_RELATIONAL_CORE`  
 `SOLVER: 18_STATE_JACOBI_RELATIONAL_EKF`  
 `GEOMETRY: MONTGOMERY_SHAPE_SPHERE (S^2)`  
 `COVARIANCE_STATUS: POSITIVE_DEFINITE_VERIFIED`  

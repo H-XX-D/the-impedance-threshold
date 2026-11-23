@@ -12,7 +12,7 @@
 ## DRAMATIS PERSONAE
 
 ### The Pulsar Bench & Cislunar Pioneers (2026–2030)
-* **Dr. Ryan Vance:** Protagonist. Astrodynamicist, relational metrologist, and Lead Guidance, Navigation, and Control (GNC) Architect for Project ARGONAUT. Originator of the Quantum Relational Causality (QRC) theoretical framework. Former post-doctoral researcher at Green Bank Observatory. Independent developer of CislunarOS on edge silicon. Driven by an uncompromising reverence for physical clocks and measurable relations.
+* **Dr. Ryan Vance:** Protagonist. Astrodynamicist, relational metrologist, and Lead Guidance, Navigation, and Control (GNC) Architect for Project ARGONAUT. Originator of the Quantum Relational Causality (QRC) theoretical framework. Former post-doctoral researcher at Green Bank Observatory. Independent developer of ArgonautOS on edge silicon. Driven by an uncompromising reverence for physical clocks and measurable relations.
 * **Dr. Elena Rostova:** Senior Flight Dynamics Specialist at NASA Johnson Space Center and Goddard Space Flight Center. Co-architect of the Cislunar Optical Communication (O-COMM) network. Former test director for the Lunar Gateway Power and Propulsion Element. Fierce, brilliant, with an intuitive mastery of chaotic three-body phase space.
 * **Marcus Thorne:** Lead Flight Dynamics Officer (FIDO), Mission Control Center, Houston (Building 30). Veteran of the Artemis program. Unflinching under telemetry emergencies; identifies the fatal covariance starvation failure aboard *Prometheus*.
 * **Sarah Lin:** NASA Flight Director, Mission Control Center, Houston ("Iron Sarah"). Procedurally rigorous, decisive, and the executive authority who authorizes the emergency laser takeover of Artemis-7.
@@ -31,7 +31,7 @@
 
 For three centuries, classical mechanics operated under a convenient mathematical crutch: that space is an empty, pre-existing container, a Cartesian stage upon which the drama of matter and radiation unfolds.
 
-Sir Isaac Newton called it absolute space—an immovable, infinite sensorium. Albert Einstein shattered that illusion. General Relativity proved that spacetime has no independent existence apart from physical relations, proper times, and clocks. **Einstein was right.** Geometry is dynamic, and space and time are relational.
+Sir Isaac Newton called it absolute space—an immovable, infinite sensorium. Albert Einstein shattered that illusion. General Relativity proved that spacetime has no independent existence apart from physical relations, proper times, and clocks. Geometry is dynamic, and space and time are relational.
 
 Yet over the ensuing century, applied physics and flight software quietly drifted back into classical habits. Practitioners treated coordinate grids as physical substances. When complex orbital mechanics or quantum field theories collided with noisy observations, engineers and theorists added empirical fudge factors, smuggled parameters, and artificial background grids to force a fit. Whenever an unexpected trajectory anomaly occurred—a covariance starvation collapse in an onboard filter, or an unexplained clock drift near a lunar Lagrange point—software tuned process noise matrices rather than trusting relational physics.
 

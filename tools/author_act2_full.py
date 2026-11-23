@@ -216,11 +216,11 @@ Sarah tapped her headset. "Who is this?"
 
 Sarah frowned, looking across the room at the Russian-born specialist. "Elena, this is not the time for payload experiments."
 
-"Listen to me, Sarah," Elena said, stepping forward so that her voice carried across the silent room. "When we qualified Artemis-7, we installed an auxiliary experimental navigation package on the secondary science bus under Safety Protocol 14-B. It's an NVIDIA Jetson Orin Nano running CislunarOS, built by Dr. Ryan Vance."
+"Listen to me, Sarah," Elena said, stepping forward so that her voice carried across the silent room. "When we qualified Artemis-7, we installed an auxiliary experimental navigation package on the secondary science bus under Safety Protocol 14-B. It's an NVIDIA Jetson Orin Nano running ArgonautOS, built by Dr. Ryan Vance."
 
 Marcus Thorne looked up. "The edge board from the Plum Brook cold-vacuum tests?"
 
-"The board draws seven watts," Elena said. "It has been receiving raw 1553 bus telemetry since liftoff. It does not use Cartesian coordinates, and it does not use a classical Kalman filter. It runs a Square-Root Information Filter on Jacobi shape coordinates. While the Honeywell computer was starving its covariance, CislunarOS tracked the true physical trajectory to within fifty meters."
+"The board draws seven watts," Elena said. "It has been receiving raw 1553 bus telemetry since liftoff. It does not use Cartesian coordinates, and it does not use a classical Kalman filter. It runs a Square-Root Information Filter on Jacobi shape coordinates. While the Honeywell computer was starving its covariance, ArgonautOS tracked the true physical trajectory to within fifty meters."
 
 "Does it have thruster authority?" Sarah asked bluntly.
 
@@ -262,7 +262,7 @@ Elena Rostova rested her fingers on the terminal keyboard.
 On her screen sat the 128-byte binary authorization sequence, signed with Ryan Vance’s personal cryptographic key from the Blacksburg workshop:
 
 ```
-[AUTHENTICATED CISLUNAROS RECOVERY COMMAND]
+[AUTHENTICATED ARGONAUTOS RECOVERY COMMAND]
 PAYLOAD_ID:           AUX_GNC_SLOT_14B (JETSON ORIN NANO)
 AUTHORITY TOKEN 1:    0x7A9F... (TAKEOVER_PRIMARY_BUS)
 AUTHORITY TOKEN 2:    0x4C12... (STAGE_RECOVERY_BURN)
@@ -281,7 +281,7 @@ Inside the electronics bay of *Prometheus*, the optocoupler clicked.
 
 A blue status LED on the Jetson Orin Nano illuminated:
 ```
-[CISLUNAROS EXEC: CRYPTOGRAPHIC AUTHORITY VERIFIED]
+[ARGONAUTOS EXEC: CRYPTOGRAPHIC AUTHORITY VERIFIED]
 PRIMARY BUS OVERRIDE: ENGAGED
 HONEYWELL GNC STATUS: ISOLATED (COMMAND AUTHORITY TRANSFERRED)
 SRIF NAV FILTER: ACTIVATED // 0D RELATIONAL TRACKING RESTORED
@@ -312,12 +312,12 @@ PREDICTED PERILUNE:       112.4 km (CLEARANCE: +112.4 km)
 
 For forty-eight point two seconds, the seven-watt computer held the four-ton spacecraft in an iron relational grip.
 
-Using only its internal Square-Root Information Filter and the optical bearing to the lunar limb, CislunarOS continuously modulated the thruster pulses, adjusting for propellant tank slosh and center-of-mass migration.
+Using only its internal Square-Root Information Filter and the optical bearing to the lunar limb, ArgonautOS continuously modulated the thruster pulses, adjusting for propellant tank slosh and center-of-mass migration.
 
 At 04:49:18 UTC, the engine shut down.
 
 ```
-[CISLUNAROS GNC: BURN COMPLETE // RESIDUAL DELTA-V: 0.012 m/s]
+[ARGONAUTOS GNC: BURN COMPLETE // RESIDUAL DELTA-V: 0.012 m/s]
 NEW TRAJECTORY PARAMETERS:
   PERILUNE ALTITUDE:      112.38 km
   TIME TO PERILUNE:       05:36:00 UTC
@@ -369,9 +369,9 @@ Time (UTC)    Event Description & Flight Subsystem Response
 04:13:15      Primary GNC locks in PROTECTIVE_SCREENED_COAST. Crew manual input blocked.
 04:35:00      Mount Stromlo 1.8m telescope establishes 1550 nm laser uplink to Gateway.
 04:47:19      Gateway relays 128-byte signed authorization packet to Prometheus.
-04:47:45      Jetson Orin Nano (CislunarOS Slot 14-B) accepts TAKEOVER authorization.
+04:47:45      Jetson Orin Nano (ArgonautOS Slot 14-B) accepts TAKEOVER authorization.
 04:47:46      FixedQP-256 integer guidance core calculates recovery trajectory in 1.84 ms.
-04:48:30      CislunarOS ignites auxiliary Aerojet thrusters for recovery burn (49.52 m/s).
+04:48:30      ArgonautOS ignites auxiliary Aerojet thrusters for recovery burn (49.52 m/s).
 04:49:18      Recovery burn complete. Residual dv: 0.012 m/s. Perilune restored to 112.4 km.
 05:36:00      Spacecraft passes perilune at 112.38 km altitude on nominal free-return arc.
 ================================================================================
@@ -403,7 +403,7 @@ int check_measurement_gate(float y[], float S_inv[][3], float gate_threshold) {
 Because floating-point roundoff cancellation created a negative eigenvalue in the residual covariance matrix $\mathbf{S}$, the quadratic form produced $\chi^2 = -287.412$. Because $-287.412 \le 35.0$, the gate passed, corrupting the vehicle state vector and placing *Prometheus* on a collision course with the Moon.
 
 #### 2.1 The Square-Root Information Filter (SRIF) Solution
-In CislunarOS, the Square-Root Information Filter updates the information matrix $\mathbf{R}$ via orthogonal Householder QR factorization:
+In ArgonautOS, the Square-Root Information Filter updates the information matrix $\mathbf{R}$ via orthogonal Householder QR factorization:
 $$\mathbf{T} \begin{bmatrix} \mathbf{R} & \mathbf{z} \\ \mathbf{R}_v \mathbf{H} & \mathbf{R}_v \mathbf{y} \end{bmatrix} = \begin{bmatrix} \mathbf{R}_{\text{new}} & \mathbf{z}_{\text{new}} \\ \mathbf{0} & \mathbf{e} \end{bmatrix}$$
 
 Because the innovation vector $\mathbf{e}$ is evaluated as a Euclidean vector norm:
@@ -413,7 +413,7 @@ The Normalized Innovation Squared is mathematically guaranteed to be strictly no
 ### 3.0 MIB RECOMMENDATIONS
 1. Mandatory retirement of classical covariance-propagation EKFs in all future deep-space human and robotic missions.
 2. Immediate flight certification of Square-Root Information Filters (SRIF) and convex FixedQP integer guidance cores across all NASA exploration programs.
-3. Official chartering of Project ARGONAUT to utilize the CislunarOS architecture for the upcoming robotic sample-return mission to Europa.
+3. Official chartering of Project ARGONAUT to utilize the ArgonautOS architecture for the upcoming robotic sample-return mission to Europa.
 
 *Approved by the Mishap Investigation Board,*
 **Sarah Lin**, NASA Flight Director & Chair

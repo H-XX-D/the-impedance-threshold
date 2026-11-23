@@ -44,7 +44,7 @@ Arthur Vance groaned audibly, rolling his eyes toward the ceiling. "Sarah, do no
 
 "What is the uplink bandwidth?" Marcus asked, his pulse suddenly racing.
 
-"Two hundred megabits per second," Elena replied. "Enough to send the entire Library of Congress in three minutes. But we don't need three minutes. Ryan Vance has compiled the autonomous integer guidance core of CislunarOS into a four-hundred-and-eighty-two-kilobyte ELF binary."
+"Two hundred megabits per second," Elena replied. "Enough to send the entire Library of Congress in three minutes. But we don't need three minutes. Ryan Vance has compiled the autonomous integer guidance core of ArgonautOS into a four-hundred-and-eighty-two-kilobyte ELF binary."
 
 "Tell me about the code, Dr. Vance," Sarah Lin said, her eyes fixed on the speakerphone.
 
@@ -54,7 +54,7 @@ Through the wire, Ryan Vance’s voice was calm, measured, and shockingly direct
 
 "Can it execute on the vehicle?" Lin asked. "The RAD750 is an ancient architecture."
 
-"It doesn't run on the RAD750," Ryan explained. "It runs on the auxiliary optical communication processor—a modern ARM-based SoC integrated into the optical transceiver module on the service module exterior. That processor has direct DMA access to the secondary CAN bus governing the auxiliary reaction control thrusters. Once uploaded, CislunarOS will take autonomous command of the four ten-pound reaction control pods, determine the true state vector using the raw OpNav camera stream, and execute a forty-nine point five meter-per-second radial correction burn before the spacecraft enters the lunar occultation zone."
+"It doesn't run on the RAD750," Ryan explained. "It runs on the auxiliary optical communication processor—a modern ARM-based SoC integrated into the optical transceiver module on the service module exterior. That processor has direct DMA access to the secondary CAN bus governing the auxiliary reaction control thrusters. Once uploaded, ArgonautOS will take autonomous command of the four ten-pound reaction control pods, determine the true state vector using the raw OpNav camera stream, and execute a forty-nine point five meter-per-second radial correction burn before the spacecraft enters the lunar occultation zone."
 
 "It's a suicide pact," Arthur hissed. "We are handing control of an eight-billion-dollar crewed spacecraft to a script written in a garage!"
 
@@ -130,7 +130,7 @@ A long pause stretched across the UHF link, punctuated by the rhythmic hiss of s
 
 "...Negative thirty-eight?..." Wiseman replied, the professional composure momentarily fracturing. "...Houston, confirm negative thirty-eight? We don't have visual terrain altitude yet... OpNav shows green..."
 
-"OpNav is starving, Reid," Lin said. "We cannot command your AJ10 through the primary bus. We are about to lose Goldstone. In four minutes, Mount Stromlo in Australia is going to initiate an optical laser uplink to your auxiliary communications terminal. They are uploading an autonomous guidance core called CislunarOS. It will take command of your auxiliary RCS thrusters and execute a forty-nine point five meter-per-second burn. You will see an auxiliary takeover prompt on your cockpit display. You must flip the override toggle. Do not wait for Houston confirmation. If you don't authorize that burn, you will hit the ground before we acquire you on the other side."
+"OpNav is starving, Reid," Lin said. "We cannot command your AJ10 through the primary bus. We are about to lose Goldstone. In four minutes, Mount Stromlo in Australia is going to initiate an optical laser uplink to your auxiliary communications terminal. They are uploading an autonomous guidance core called ArgonautOS. It will take command of your auxiliary RCS thrusters and execute a forty-nine point five meter-per-second burn. You will see an auxiliary takeover prompt on your cockpit display. You must flip the override toggle. Do not wait for Houston confirmation. If you don't authorize that burn, you will hit the ground before we acquire you on the other side."
 
 "...Copy, Houston..." Wiseman’s voice faded as the signal-to-noise ratio plunged toward zero. "...Standing by for... laser acquisition... auxiliary override... armed... see you on the other side..."
 

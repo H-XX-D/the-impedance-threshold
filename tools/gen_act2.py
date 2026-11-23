@@ -203,7 +203,7 @@ The room seemed to pause.
 
 "And what is running on that shadow board?" Sarah Lin asked.
 
-"CislunarOS," Elena said. "Ryan Vance’s square-root relational stack. It doesn't use GEONS. It doesn't invert the covariance matrix. It carries its uncertainties in square-root Cholesky form, and it gates its measurements with QR factorization. It cannot produce a negative variance."
+"ArgonautOS," Elena said. "Ryan Vance’s square-root relational stack. It doesn't use GEONS. It doesn't invert the covariance matrix. It carries its uncertainties in square-root Cholesky form, and it gates its measurements with QR factorization. It cannot produce a negative variance."
 
 Marcus leaned forward, pulling up the shadow telemetry channel on a secondary display: `AUX_PL_04_HEALTH`.
 
@@ -290,7 +290,7 @@ The solid-state optical relay clicked. The primary Honeywell flight executive wa
 `PREPARE_BEFORE_ISSUE: JOURNAL WRITTEN TO DURABLE STORAGE`  
 `IGNITION COUNTDOWN: T-MINUS 00:30 SECONDS`  
 
-In the crew cabin of *Prometheus*, Commander David Cole watched the main instrument panel reboot. The red warning banners across the primary displays vanished, replaced by the clean, unfamiliar monospace typography of CislunarOS:
+In the crew cabin of *Prometheus*, Commander David Cole watched the main instrument panel reboot. The red warning banners across the primary displays vanished, replaced by the clean, unfamiliar monospace typography of ArgonautOS:
 
 ```
 [RELATIONAL GNC ACTIVE]
@@ -376,7 +376,7 @@ if (nis <= NIS_GATE_35) {
 // No check that nis >= 0, no check that P remains positive definite
 ```
 
-Because $-287.4 \le 35.0$, the gate passed, corrupting the vehicle state vector and placing *Prometheus* on an impact course. The subsequent autonomous recovery by the auxiliary Jetson Orin Nano running CislunarOS demonstrated the operational necessity of square-root information filtering and diverse verification in deep space flight.
+Because $-287.4 \le 35.0$, the gate passed, corrupting the vehicle state vector and placing *Prometheus* on an impact course. The subsequent autonomous recovery by the auxiliary Jetson Orin Nano running ArgonautOS demonstrated the operational necessity of square-root information filtering and diverse verification in deep space flight.
 """
 
 def main():

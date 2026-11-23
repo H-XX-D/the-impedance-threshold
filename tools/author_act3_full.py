@@ -41,7 +41,7 @@ The mission was christened **Project ARGONAUT**.
 
 Instead of a multi-billion-dollar direct lander, ARGONAUT was a two-craft architecture:
 1. **The Callisto Carrier Depot:** A heavy 42-ton deep-space mothership powered by a 200-kilowatt Westinghouse space fission reactor and twelve gridless Hall thrusters. It would carry the scientific laboratories, cryogenic return tanks, and communication arrays, remaining permanently in high Callisto orbit as a radiation haven.
-2. **The Europa Skimmer:** A stripped-down, 1,200-kilogram autonomous kinetic dart. Powered by 28-nanometer Fully Depleted Silicon-On-Insulator (FD-SOI) rad-tolerant electronics running CislunarOS, the Skimmer would perform a rapid, 112-hour ballistic dive from Callisto down into Europa’s inner radiation furnace, fly through the core of the cryo-plume at two kilometers per second, capture the ejected ocean grains without slowing down, and immediately sling itself back up to Callisto.
+2. **The Europa Skimmer:** A stripped-down, 1,200-kilogram autonomous kinetic dart. Powered by 28-nanometer Fully Depleted Silicon-On-Insulator (FD-SOI) rad-tolerant electronics running ArgonautOS, the Skimmer would perform a rapid, 112-hour ballistic dive from Callisto down into Europa’s inner radiation furnace, fly through the core of the cryo-plume at two kilometers per second, capture the ejected ocean grains without slowing down, and immediately sling itself back up to Callisto.
 
 "We don't touch the ice," Ryan said. "We catch the ocean while it is flying in the sky."
 """
@@ -194,7 +194,7 @@ From its perch at Callisto, the depot was eighty thousand kilometers from the ra
 
 For four long years—from 2036 to 2040—the Carrier Depot maintained its silent, automated vigil.
 
-The light-time delay between Jupiter and Earth was ninety-two minutes. Flight controllers in Houston could not drive the spacecraft with joysticks; the onboard CislunarOS executive ran the stationing maneuvers, the power cycles of the nuclear reactor, and the daily autonomous radiometric scans of the Galilean moons.
+The light-time delay between Jupiter and Earth was ninety-two minutes. Flight controllers in Houston could not drive the spacecraft with joysticks; the onboard ArgonautOS executive ran the stationing maneuvers, the power cycles of the nuclear reactor, and the daily autonomous radiometric scans of the Galilean moons.
 
 Then, on April 28, 2040, the surveillance sensors triggered an emergency interrupt.
 
@@ -215,7 +215,7 @@ In the avionics bay of the Callisto depot, the Europa Skimmer woke up from its f
 
 Its fuel valves opened. Its heaters warmed the monomethylhydrazine and nitrogen tetroxide propellant lines.
 
-Its CislunarOS flight computer calculated the ballistic transfer orbit: a 112-hour round-trip suicide dive from the sanctuary of Callisto down into the radiation inferno of Europa.
+Its ArgonautOS flight computer calculated the ballistic transfer orbit: a 112-hour round-trip suicide dive from the sanctuary of Callisto down into the radiation inferno of Europa.
 
 The hunt had begun.
 """

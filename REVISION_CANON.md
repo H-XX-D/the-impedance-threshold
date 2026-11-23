@@ -4,7 +4,6 @@ Source of truth for the November 2026 science revision. Every chapter edit follo
 
 - QRC research: `~/QRC_Quantum_Relational_Causality` (status: `docs/QRC_PROJECT_STATUS.md`, current position dated 2026-11-19; foundation: `docs/QRC_CAUSAL_IMPEDANCE_GATE_FORMULATION.md`).
 - Pulsar bench: `github.com/H-XX-D/qrc-pulsar-benchmark` (README; `docs/cislunar-error-budget-and-advantage.md`; `docs/controller-tuning-and-advantage.md`; `docs/navigation-recovery.md`).
-- Cislunar autonomy bench: CislunarOS (`github.com/H-XX-D/cislunaros`, Recall graph `cislunaros`), running natively on a Jetson Orin Nano.
 
 ## 1. QRC as the book states it
 
@@ -32,7 +31,7 @@ Source of truth for the November 2026 science revision. Every chapter edit follo
 | August to November | QRC research: the 0D foundation, causal impedance, the gates | `QRC_Quantum_Relational_Causality` (repo created Aug 10) |
 | Oct 30 | J0337+1715 relational three-body engine: Jacobi state, shape-sphere evolution benchmarked against Cartesian, 1PN EIH forces, Archibald post-fit residuals (27,110 TOAs, RMS 1.54 us), SEP diagnostics | `qrc-pulsar-benchmark` |
 | Oct 30 to Nov 1 | The same codebase grows GNC: Earth-Moon station-keeping, the Jacobi predictive controller, MPC and FixedQP, square-root filter and reacquisition, a Jovian sample-return/XNAV concept | `qrc-pulsar-benchmark` |
-| November | The cislunar autonomy product: cleanroom native C++ and cFS on a Jetson Orin Nano, LLO residence, Draco. It imports the bench's JacobiFlightModel, RoutineMPC and FixedQP | `artemis_live/mission_os` (CislunarOS) |
+| November | Autonomous flight software: cleanroom native C++ on edge silicon, LLO residence. It imports the bench's JacobiFlightModel, RoutineMPC and FixedQP | Autonomous GNC Stack |
 | Nov 3 onward | ARGONAUT: the outer-system science campaign, built on autonomous navigation | Recall `obs_654c`, `obs_0aff` |
 | Nov 22 | This novel | |
 
@@ -67,9 +66,7 @@ Source of truth for the November 2026 science revision. Every chapter edit follo
 
 ## 2. Navigation: what Ryan's system is and why it works
 
-Revised 2026-11-22 from three read-only reviews of the author's real work. Read them before editing navigation: `research_briefs/cislunaros_architecture.md`, `research_briefs/cislunaros_evidence_status.md`, `research_briefs/qrc_pulsar_benchmark.md`.
-
-### Ryan's cislunar stack = the author's CislunarOS (depict it like this)
+### Ryan's autonomous stack = ArgonautOS (depict it like this)
 
 - **State.** An 18-state Jacobi relational state: the Moon relative to the Earth, the spacecraft relative to the Earth-Moon barycenter, and the Sun relative to the Earth-Moon barycenter (position and velocity each). Integrated with an eighth-order integrator (DOP853) under the gravity of all the bodies. It is a description of how the bodies stand relative to one another; there is no grid nailed to the stars.
 - **Navigation.** An extended Kalman filter with full covariance and a Joseph-form update. Inputs: optical position fixes, bearings to the Moon, and IMU accelerations driving the prediction. In-world, after the failure below, Ryan's flight filter carries its covariance in square-root form with causal reacquisition. That repair is real and comes from the author's benchmark repo.
@@ -133,7 +130,7 @@ Revised 2026-11-22 from three read-only reviews of the author's real work. Read 
   - Departure stage: about 4.8 km/s from Callisto orbit to the Earth-return transfer, then jettisoned.
   - Capture stage: a 3.86 km/s perigee burn at 600 km on Earth arrival (arrival speed relative to Earth 9.72 km/s for the 980-day transfer), followed by a lunar flyby and small trims (tens of m/s) into Gateway's NRHO. The departure needs 4.63 km/s, so the 4.8 km/s stage has a 170 m/s margin.
   - Cold-gas thrusters handle attitude and the small cruise trims. The aim point is biased so that a failed capture burn means a harmless Earth flyby, never an atmospheric entry.
-  - "Ghost run" means no ground commands and no transmissions; the stack executes its burns autonomously, the way the CislunarOS bench executes burns under ground-supervised authority.
+  - "Ghost run" means no ground commands and no transmissions; the stack executes its burns autonomously under ground-supervised authority.
 
 ## 4. Writing rules for revised text
 

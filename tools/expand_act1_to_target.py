@@ -607,7 +607,7 @@ inline int32_t q16_mul(int32_t a, int32_t b) {
 
 Zero division by zero. Zero NaN propagation. Zero floating-point denormalization stalls.
 
-He compiled the entire package into a bare-metal Linux binary: `cislunar_os_core.elf`.
+He compiled the entire package into a bare-metal Linux binary: `argonaut_os_core.elf`.
 
 Total executable binary size: **482 kilobytes**.
 

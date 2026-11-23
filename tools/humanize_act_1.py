@@ -252,7 +252,7 @@ The doors of the Suburbans opened. Four men stepped out into the freezing drizzl
 
 Miller gestured to the two technicians waiting by the utility truck. "Our instructions are to secure all digital storage media, disconnect the fiber uplinks, and impound the prototype processing hardware for technical review."
 
-"There is no proprietary Axiom software here," Ryan said, his voice quiet and even. "The code running on our hardware is CislunarOS. It was written from scratch in open-source C++ under an academic research grant funded by the National Science Foundation."
+"There is no proprietary Axiom software here," Ryan said, his voice quiet and even. "The code running on our hardware is ArgonautOS. It was written from scratch in open-source C++ under an academic research grant funded by the National Science Foundation."
 
 "That will be determined during the administrative audit, Doctor," Miller said, stepping toward the shed portal. "In the meantime, please step aside and allow my technicians to enter the facility."
 
@@ -272,7 +272,7 @@ Kenji turned back into the shed, his voice dropping as he leaned toward Ryan: "G
 
 Ryan slipped through the rear equipment bay of the surface shed.
 
-The gold-plated aluminum chassis of the **CislunarOS Navigation Core** sat on the workbench, its dual Kintex UltraScale+ FPGAs already secured inside a foam-padded Pelican storm case. Ryan latched the four nylon dogs shut, slung the strap over his shoulder, and stepped through the rear door into the wet cedar woods.
+The gold-plated aluminum chassis of the **ArgonautOS Navigation Core** sat on the workbench, its dual Kintex UltraScale+ FPGAs already secured inside a foam-padded Pelican storm case. Ryan latched the four nylon dogs shut, slung the strap over his shoulder, and stepped through the rear door into the wet cedar woods.
 
 The air was sharp with the scent of wet pine needles and ozone. Fifty yards down the ridge, half-hidden beneath a tangle of wild blackberry brambles, was the rusted iron portal of the old coal prospecting adit.
 
@@ -349,7 +349,7 @@ Inside sat the standard NASA flight computer: a BAE RAD750 single-board computer
 
 Ryan loosened the four mounting bolts, pulled the Mil-Spec locking pins, and slid the RAD750 chassis out of its guide rails. He placed it carefully on the workbench beside the staging ladder.
 
-From the Pelican storm case, he lifted the gold-plated chassis of the **CislunarOS Navigation Core**.
+From the Pelican storm case, he lifted the gold-plated chassis of the **ArgonautOS Navigation Core**.
 
 The unit slid smoothly into the empty bay on precision-machined Teflon runners. Ryan connected the primary MIL-STD-1553 data bus harnesses, the dual SpaceWire LVDS data lines, and the 28-volt DC power cables from the spacecraft's lithium-iron-phosphate battery bank.
 
@@ -357,7 +357,7 @@ He flipped the auxiliary avionics breaker on the diagnostic panel.
 
 A faint, high-frequency whine spun up inside the chassis as the chip-scale rubidium atomic clock stabilized its vapor cell. On the small maintenance OLED monitor mounted to the chassis, clean green lines scrolled across the display:
 
-`CISLUNAR_OS_BOOT: OK`  
+`ARGONAUT_OS_BOOT: OK`  
 `KERNEL: cFS_DRACO_V7.0.1 (NATIVE_C++)`  
 `SOLVER: 18_STATE_JACOBI_RELATIONAL_EKF`  
 `FILTER_MODE: SQUARE_ROOT_JOSEPH_UPDATE`  
@@ -365,7 +365,7 @@ A faint, high-frequency whine spun up inside the chassis as the chip-scale rubid
 `COVARIANCE_DIAG: POSITIVE_DEFINITE_VERIFIED`  
 `CPU_LOAD: 7.2_WATTS @ 100_HZ`  
 
-"She's booted," Ryan said, exhaling slowly. "CislunarOS is running on the primary bus."
+"She's booted," Ryan said, exhaling slowly. "ArgonautOS is running on the primary bus."
 
 ### The Test Campaign
 
@@ -387,7 +387,7 @@ On the flight console, the ignition arming interlocks shifted from amber to gree
 
 `RANGE_SAFETY: DPA_TITLE_III_EXEMPTION_CONFIRMED`  
 `FLIGHT_TERMINATION: ARMED_AND_MONITORED`  
-`GUIDANCE_MODE: CISLUNAR_OS_AUTONOMOUS_PRIMARY`  
+`GUIDANCE_MODE: ARGONAUT_OS_AUTONOMOUS_PRIMARY`  
 `BOOSTER_STATUS: CASTOR_30XL_READY`  
 
 Ryan climbed into *Argonaut*’s pressurized two-man command module, securing his five-point restraint harness beside Marcus. Outside the forward vision block, the vast dome opened to the morning clouds.

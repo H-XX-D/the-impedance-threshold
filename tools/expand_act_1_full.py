@@ -261,7 +261,7 @@ A tactical hydraulic breaching ram.
 
 "Two minutes before they clear the upper blast airlock," Ryan replied. He clicked the locking latches on the gold-plated FPGA core, lifting the twelve-kilogram unit from its vibration-isolation cradle. He slid it into a ruggedized, foam-lined Pelican 1510 flight case, snapping the four glass-filled nylon latches shut.
 
-"What about the servers?" Kenji asked, pointing at the eight racks of IBM blade servers storing ten years of raw pulsar timing data and the compiled CislunarOS codebase.
+"What about the servers?" Kenji asked, pointing at the eight racks of IBM blade servers storing ten years of raw pulsar timing data and the compiled ArgonautOS codebase.
 
 "We don't leave them a single byte," Ryan said.
 
@@ -321,7 +321,7 @@ Ryan threw the Pelican case into the cab and vaulted onto the bench seat, slammi
 
 Thorne tapped the Pelican case resting between Ryan's boots. "Is that the complete flight core?"
 
-"Dual Kintex UltraScale+ FPGAs, rubidium clock, GaN power switches, and the entire CislunarOS relational guidance stack," Ryan said. "It has the Montgomery shape-sphere solver and the square-root information filter."
+"Dual Kintex UltraScale+ FPGAs, rubidium clock, GaN power switches, and the entire ArgonautOS relational guidance stack," Ryan said. "It has the Montgomery shape-sphere solver and the square-root information filter."
 
 "Good," Thorne said, leaning over the steering wheel as the windshield wipers swept furiously against the downpour. "Because we have a four-hour drive to Ohio, and the Air Force just placed the entire Midwest corridor under Class Echo airspace restrictions."
 
@@ -386,7 +386,7 @@ He flipped the auxiliary avionics master switch on the diagnostic panel.
 
 A high-pitched turbine whine spun up inside the core as the chip-scale rubidium atomic clock stabilized its vapor cell. On the small maintenance OLED display mounted to the chassis, green text scrolled at lightning speed:
 
-`CISLUNAR_OS_BOOT: OK`  
+`ARGONAUT_OS_BOOT: OK`  
 `FPGA_0: KINTEX_ULTRASCALE_KU115 (ONLINE)`  
 `FPGA_1: MONTGOMERY_SHAPE_SOLVER (ONLINE)`  
 `ALTIMETER_FUSION: SQUARE_ROOT_FILTER_INITIALIZED`  

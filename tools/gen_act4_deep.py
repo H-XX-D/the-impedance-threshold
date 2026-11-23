@@ -29,7 +29,7 @@ The total round-trip trajectory was budgeted for precisely **one hundred and twe
 
 Inside the Skimmer’s unpressurized avionics shelf, the electronics ran with absolute, Spartan economy.
 
-There was no active liquid cooling, no heavy copper shielding, and no human life-support equipment. The brain of the Skimmer was a radiation-hardened 28-nanometer Fully Depleted Silicon-On-Insulator (FD-SOI) microprocessor, drawing five point eight watts, executing CislunarOS Revision 6.1.
+There was no active liquid cooling, no heavy copper shielding, and no human life-support equipment. The brain of the Skimmer was a radiation-hardened 28-nanometer Fully Depleted Silicon-On-Insulator (FD-SOI) microprocessor, drawing five point eight watts, executing ArgonautOS Revision 6.1.
 
 At hour thirty-six of the dive, the craft crossed the orbital radius of Ganymede and plunged into the inner Jovian radiation belts.
 
@@ -255,7 +255,7 @@ The spacecraft decelerated violently, curving into a high, eccentric Earth captu
 
 As it climbed out toward apogee, it encountered the Moon’s gravitational sphere of influence.
 
-Instead of fighting the Moon’s gravity with precious propellant, the CislunarOS guidance system slipped the spacecraft directly into the **Three-Body Invariant Manifold** of the Earth-Moon $L_2$ point—a chaotic gravitational needle thread where the competing pulls of Earth, Moon, and Sun balanced out to zero.
+Instead of fighting the Moon’s gravity with precious propellant, the ArgonautOS guidance system slipped the spacecraft directly into the **Three-Body Invariant Manifold** of the Earth-Moon $L_2$ point—a chaotic gravitational needle thread where the competing pulls of Earth, Moon, and Sun balanced out to zero.
 
 With a final, thirty-four-meter-per-second trim from its cold-gas thrusters, Canister 1 slid into its target destination:
 

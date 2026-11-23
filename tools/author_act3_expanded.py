@@ -313,7 +313,7 @@ And most importantly: the radiation dosimeters on ARGONAUT registered a calm, wh
 [STATUS] MOTHERSHIP ANCHORED IN SANCTUARY.
 ```
 
-Inside the avionics bay, the CislunarOS navigation computer—an evolved, radiation-hardened 28nm FD-SOI implementation of the integer guidance engine Ryan had first tested on his garage workbench—calmly verified its orbital parameters.
+Inside the avionics bay, the ArgonautOS navigation computer—an evolved, radiation-hardened 28nm FD-SOI implementation of the integer guidance engine Ryan had first tested on his garage workbench—calmly verified its orbital parameters.
 
 It was safe.
 

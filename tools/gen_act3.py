@@ -280,7 +280,7 @@ MISSION EXECUTIVE: PERMISSION TO SEPARATE SKIMMER
 
 Two million kilometers away, inside the quiet electronics vault of the Callisto depot, the executive computer did not wait for approval from Houston. A signal sent to Earth would take forty-five minutes to arrive, and forty-five minutes for a reply to return; by then, the orbital intercept window would be closed.
 
-The CislunarOS flight executive verified the trajectory through its diverse Cartesian verifier.
+The ArgonautOS flight executive verified the trajectory through its diverse Cartesian verifier.
 
 The journal entry was committed to non-volatile memory.
 

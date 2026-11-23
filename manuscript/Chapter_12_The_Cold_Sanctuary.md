@@ -97,7 +97,7 @@ The Skimmer was an autonomous machine. Because the round-trip light-travel time 
 The entire flight—the ballistic drop, the high-speed plume intercept, the aerogel exposure, the autonomous laser weld, and the return trajectory insertion—depended exclusively on the thirty-two-bit integer guidance core embedded in its 28-nanometer FD-SOI processor.
 
 ```
-[EXEC] CISLUNAROS REVISION 7.4 ENGAGED.
+[EXEC] ARGONAUTOS REVISION 7.4 ENGAGED.
 [EXEC] SENSORS ONLINE: SAGNAC GYROS, OPNAV STAR TRACKER, UV SENSOR.
 [EXEC] TARGET: EUROPA PLUME #3 INTERCEPT.
 [EXEC] PLANNED TRAJECTORY: BALLISTIC DIVE (112 HOURS).

@@ -412,7 +412,7 @@ The solver was hard-coded to execute precisely **two hundred and fifty-six itera
 * Memory allocation: Zero dynamic heap allocations (`malloc` was completely stripped from the binary).
 * Power consumption: Less than 0.5 Watts during optimization.
 
-He called the complete operating stack **CislunarOS**.
+He called the complete operating stack **ArgonautOS**.
 
 ---
 
@@ -431,7 +431,7 @@ Ryan tapped his laptop keyboard. The screen displayed the real-time telemetry st
 ```
 ================================================================================
 PLUM BROOK FACILITY: ENVIRONMENTAL QUALIFICATION RUN #04
-Payload: CislunarOS Revision 4.2 / Jetson Orin Nano Edge Partition
+Payload: ArgonautOS Revision 4.2 / Jetson Orin Nano Edge Partition
 Thermal Plate Temperature: -84.6 deg C | Chamber Pressure: 1.2e-07 torr
 Radiation Dose Rate: 12.4 rad/hr (Co-60 Gamma Simulator)
 System Power Draw: 7.18 Watts (Peak: 7.22 Watts)

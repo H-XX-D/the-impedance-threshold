@@ -14,7 +14,7 @@ Dr. Lachlan Mackay, Senior Optical Engineer for the Australian National Universi
 
 Beneath the primary mirror cell, in the temperature-controlled coudé room, a piezoelectric deformable mirror—a thin, flexible sheet of polished silica glass backed by ninety-seven electrostrictive ceramic actuators—was pulsing thousands of times a second. It was sensing the atmospheric turbulence in the thermal boundary layers above the Australian capital and flexing its surface to cancel the optical wavefront distortions, transforming a smeared, twinkling star image into a diffraction-limited optical point.
 
-"Mount Stromlo, this is Elena Rostova at Goddard," Elena's voice came through the dedicated trans-Pacific fiber link with zero latency. "Telemetry confirm, Lachlan. We have the payload staged in the local memory buffer. File name: `cislunar_os_core.elf`. Size: four hundred and eighty-two kilobytes. Checksum: `0x7F4A8C91`. Are you ready to arm the high-power transmitter?"
+"Mount Stromlo, this is Elena Rostova at Goddard," Elena's voice came through the dedicated trans-Pacific fiber link with zero latency. "Telemetry confirm, Lachlan. We have the payload staged in the local memory buffer. File name: `argonaut_os_core.elf`. Size: four hundred and eighty-two kilobytes. Checksum: `0x7F4A8C91`. Are you ready to arm the high-power transmitter?"
 
 Mackay looked at the key-switch on the laser safety interlock panel. A red tag dangled from the brass tumbler: `DANGER: CLASS 4 COVERT LASER RADIATION - EYE HAZARD AT 500 KM`.
 
@@ -48,7 +48,7 @@ The photons focused onto a high-speed InGaAs avalanche photodiode, triggering an
 [OCTA-RX] OPTICAL CARRIER LOCKED: 1550.12 nm
 [OCTA-RX] SIGNAL-TO-NOISE RATIO: +18.4 dB
 [OCTA-RX] INCOMING BITSTREAM: 100.0 Mbps
-[DMA-ENGINE] INCOMING PACKET STREAM: CISLUNAR_OS_CORE.ELF
+[DMA-ENGINE] INCOMING PACKET STREAM: ARGONAUT_OS_CORE.ELF
 [DMA-ENGINE] WRITING TO FLASH BLOCK 0x00400000...
 ```
 
@@ -61,7 +61,7 @@ In the auxiliary communication processor's non-volatile memory, the cyclic redun
 [CRC32] EXPECTED: 0x7F4A8C91
 [CRC32] INTEGRITY VERIFIED: 100% MATCH
 [EXEC] OVERRIDING GUIDANCE ARBITER...
-[EXEC] CISLUNAROS INITIALIZING IN ISOLATED MEMORY PARTITION...
+[EXEC] ARGONAUTOS INITIALIZING IN ISOLATED MEMORY PARTITION...
 ```
 
 The software was alive.
@@ -209,7 +209,7 @@ Marcus Thorne let out a long, ragged breath that sounded like a sob. He leaned f
 
 On his console, the telemetry stream displayed the signature of the software that had flown the ship through the dark:
 
-`GNC-CORE: CISLUNAROS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF`
+`GNC-CORE: ARGONAUTOS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF`
 
 Marcus reached over to his private phone, dialed the Blacksburg garage, and whispered into the receiver:
 

@@ -23,7 +23,7 @@ The Artemis vehicle was rotating along its minor axis, its four 15-meter solar a
 
 "Relative closing rate is nominal," Marcus Thorne said, his hands light on the rotational hand controllers. "I have visual on their forward docking port. But look at that roll rate. Eighteen revolutions per minute. If we make contact while she's rolling like that, their docking petals will shear our forward collar clean off."
 
-"We match their angular momentum vector," Ryan Vance said from the right couch. He had tied *Argonaut*’s attitude control loop directly into the CislunarOS Jacobi state estimator. "The Montgomery shape-sphere solver has their spin axis mapped. Engaging synchronized roll."
+"We match their angular momentum vector," Ryan Vance said from the right couch. He had tied *Argonaut*’s attitude control loop directly into the ArgonautOS Jacobi state estimator. "The Montgomery shape-sphere solver has their spin axis mapped. Engaging synchronized roll."
 
 ### The Docking Mate
 
@@ -167,7 +167,7 @@ He worked with careful, measured precision. Stripping two inches of silver-plate
 
 He ran a thin, high-voltage shielded coax cable from the GaN module's gate driver around the engine skirt, plugging it into the exterior SpaceWire auxiliary port on *Argonaut*’s forward boom.
 
-"Elena, trigger line is connected," Ryan gasped. "Send the test pulse from CislunarOS."
+"Elena, trigger line is connected," Ryan gasped. "Send the test pulse from ArgonautOS."
 
 Inside the cockpit of *Prometheus*, Elena touched the diagnostic command:
 
@@ -296,7 +296,7 @@ A stunned, dead silence fell over the radio loop from Johnson Space Center.
 
 *"Then... who fired the engine?"* Hastings stammered.
 
-"We did," Elena answered. "Dr. Ryan Vance and Marcus Thorne intercepted us aboard the research vessel *Argonaut*. They hot-grafted the CislunarOS relational guidance architecture into our avionics, bypassed your burned relays, and executed a precision three-body insertion burn using Montgomery shape-sphere coordinates."
+"We did," Elena answered. "Dr. Ryan Vance and Marcus Thorne intercepted us aboard the research vessel *Argonaut*. They hot-grafted the ArgonautOS relational guidance architecture into our avionics, bypassed your burned relays, and executed a precision three-body insertion burn using Montgomery shape-sphere coordinates."
 
 Elena leaned into the microphone, her voice carrying the full weight of history:
 
@@ -308,7 +308,7 @@ Forty hours later, *Argonaut* and *Prometheus* glided into the vicinity of **Lun
 
 The station looked like a gleaming technological dragonfly: a central cylindrical habitat module flanked by massive, gold-mesh solar electric propulsion arrays, an external Canadian robotic arm, and multiple international docking ports.
 
-The automated docking sequence, governed entirely by CislunarOS, executed with flawless mathematical elegance. The docking mechanisms engaged without a millimeter of lateral drift.
+The automated docking sequence, governed entirely by ArgonautOS, executed with flawless mathematical elegance. The docking mechanisms engaged without a millimeter of lateral drift.
 
 When the interior airlock hatch opened, Station Commander Arthur Pendelton stood waiting in the Gateway vestibule, extending a hand to Ryan.
 
@@ -383,7 +383,7 @@ $$\Delta t_{\text{Shapiro}} = \frac{2 G M_{\text{Jup}}}{c^3} \ln \left( \frac{4 
 
 "The Shapiro time delay," Kenji murmured.
 
-"Precisely," Ryan said. "The delay is sixteen point four milliseconds. And because it is relational network latency, it is completely achromatic. By measuring the arrival times of Europa's radio emissions relative to Callisto's reference frame using our rubidium atomic clock, CislunarOS can determine the skimmer's position within three meters—in real time, completely autonomously, with zero communication from Earth."
+"Precisely," Ryan said. "The delay is sixteen point four milliseconds. And because it is relational network latency, it is completely achromatic. By measuring the arrival times of Europa's radio emissions relative to Callisto's reference frame using our rubidium atomic clock, ArgonautOS can determine the skimmer's position within three meters—in real time, completely autonomously, with zero communication from Earth."
 
 Elena Rostova looked at the schematic of the skimmer, then out the window at the distant, shining disk of Jupiter.
 

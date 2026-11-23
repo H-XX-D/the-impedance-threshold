@@ -24,7 +24,7 @@ FRONT_MATTER = r"""# THE IMPEDANCE THRESHOLD: ARGONAUT
 ## DRAMATIS PERSONAE
 
 ### The Pulsar Bench & Cislunar Pioneers (2026–2030)
-* **Dr. Ryan Vance:** Protagonist. Astrodynamicist, relational metrologist, and Lead Guidance, Navigation, and Control (GNC) Architect for Project ARGONAUT. Originator of the Quantum Relational Causality (QRC) theoretical framework. Former post-doctoral researcher at Green Bank Observatory. Independent developer of CislunarOS on edge silicon. Driven by an uncompromising reverence for physical clocks and measurable relations.
+* **Dr. Ryan Vance:** Protagonist. Astrodynamicist, relational metrologist, and Lead Guidance, Navigation, and Control (GNC) Architect for Project ARGONAUT. Originator of the Quantum Relational Causality (QRC) theoretical framework. Former post-doctoral researcher at Green Bank Observatory. Independent developer of ArgonautOS on edge silicon. Driven by an uncompromising reverence for physical clocks and measurable relations.
 * **Dr. Elena Rostova:** Senior Flight Dynamics Specialist at NASA Johnson Space Center and Goddard Space Flight Center. Co-architect of the Cislunar Optical Communication (O-COMM) network. Former test director for the Lunar Gateway Power and Propulsion Element. Fierce, brilliant, with an intuitive mastery of chaotic three-body phase space.
 * **Marcus Thorne:** Lead Flight Dynamics Officer (FIDO), Mission Control Center, Houston (Building 30). Veteran of the Artemis program. Unflinching under telemetry emergencies; identifies the fatal covariance starvation failure aboard *Prometheus*.
 * **Sarah Lin:** NASA Flight Director, Mission Control Center, Houston ("Iron Sarah"). Procedurally rigorous, decisive, and the executive authority who authorizes the emergency laser takeover of Artemis-7.
@@ -463,7 +463,7 @@ The solver was hard-coded to execute precisely **two hundred and fifty-six itera
 * Memory allocation: Zero dynamic heap allocations (`malloc` was completely stripped from the binary).
 * Power consumption: Less than 0.5 Watts during optimization.
 
-He called the complete operating stack **CislunarOS**.
+He called the complete operating stack **ArgonautOS**.
 
 ---
 
@@ -482,7 +482,7 @@ Ryan tapped his laptop keyboard. The screen displayed the real-time telemetry st
 ```
 ================================================================================
 PLUM BROOK FACILITY: ENVIRONMENTAL QUALIFICATION RUN #04
-Payload: CislunarOS Revision 4.2 / Jetson Orin Nano Edge Partition
+Payload: ArgonautOS Revision 4.2 / Jetson Orin Nano Edge Partition
 Thermal Plate Temperature: -84.6 deg C | Chamber Pressure: 1.2e-07 torr
 Radiation Dose Rate: 12.4 rad/hr (Co-60 Gamma Simulator)
 System Power Draw: 7.18 Watts (Peak: 7.22 Watts)

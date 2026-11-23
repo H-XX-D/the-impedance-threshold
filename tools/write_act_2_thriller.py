@@ -228,7 +228,7 @@ Inside *Argonaut*’s cockpit, Ryan Vance was flying with both hands on the manu
 
 He initiated the high-speed optical data burst.
 
-Through the fifteen-hundred-and-fifty-nanometer infrared beam, thirty megabytes of compiled machine code streamed across three thousand kilometers of vacuum in less than four seconds. It was the complete, flight-hardened **CislunarOS** stack: the 18-state Jacobi relational estimator, the square-root information filter, the diverse Cartesian verifier, and the receding-horizon QP guidance planner.
+Through the fifteen-hundred-and-fifty-nanometer infrared beam, thirty megabytes of compiled machine code streamed across three thousand kilometers of vacuum in less than four seconds. It was the complete, flight-hardened **ArgonautOS** stack: the 18-state Jacobi relational estimator, the square-root information filter, the diverse Cartesian verifier, and the receding-horizon QP guidance planner.
 
 On the flight deck of *Prometheus*, the dead digital displays suddenly flickered.
 

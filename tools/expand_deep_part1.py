@@ -123,7 +123,7 @@ At burnout, the telemetry terminal locked its final injection velocity:
 [EUS-CUTOFF] TIME OF FLIGHT:     3.2 YEARS (DIRECT TRAJECTORY)
 [PAYLOAD-SEP] ARGONAUT VEHICLE SEPARATED FROM ADAPTER
 [PAYLOAD-SEP] HIGH-GAIN SOLAR ARRAYS DEPLOYED: NOMINAL
-[PAYLOAD-SEP] CislunarOS CORE INITIALIZED: LOCK ACQUIRED
+[PAYLOAD-SEP] ArgonautOS CORE INITIALIZED: LOCK ACQUIRED
 ```
 
 The spacecraft had severed its physical ties to Earth.
@@ -277,7 +277,7 @@ The Skimmer was an autonomous machine. Because the round-trip light-travel time 
 The entire flight—the ballistic drop, the high-speed plume intercept, the aerogel exposure, the autonomous laser weld, and the return trajectory insertion—depended exclusively on the thirty-two-bit integer guidance core embedded in its 28-nanometer FD-SOI processor.
 
 ```
-[EXEC] CISLUNAROS REVISION 7.4 ENGAGED.
+[EXEC] ARGONAUTOS REVISION 7.4 ENGAGED.
 [EXEC] SENSORS ONLINE: SAGNAC GYROS, OPNAV STAR TRACKER, UV SENSOR.
 [EXEC] TARGET: EUROPA PLUME #3 INTERCEPT.
 [EXEC] PLANNED TRAJECTORY: BALLISTIC DIVE (112 HOURS).

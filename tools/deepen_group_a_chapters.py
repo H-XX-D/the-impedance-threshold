@@ -55,7 +55,7 @@ Arthur Vance groaned audibly, rolling his eyes toward the ceiling. "Sarah, do no
 
 "What is the uplink bandwidth?" Marcus asked, his pulse suddenly racing.
 
-"Two hundred megabits per second," Elena replied. "Enough to send the entire Library of Congress in three minutes. But we don't need three minutes. Ryan Vance has compiled the autonomous integer guidance core of CislunarOS into a four-hundred-and-eighty-two-kilobyte ELF binary."
+"Two hundred megabits per second," Elena replied. "Enough to send the entire Library of Congress in three minutes. But we don't need three minutes. Ryan Vance has compiled the autonomous integer guidance core of ArgonautOS into a four-hundred-and-eighty-two-kilobyte ELF binary."
 
 "Tell me about the code, Dr. Vance," Sarah Lin said, her eyes fixed on the speakerphone.
 
@@ -65,7 +65,7 @@ Through the wire, Ryan Vance’s voice was calm, measured, and shockingly direct
 
 "Can it execute on the vehicle?" Lin asked. "The RAD750 is an ancient architecture."
 
-"It doesn't run on the RAD750," Ryan explained. "It runs on the auxiliary optical communication processor—a modern ARM-based SoC integrated into the optical transceiver module on the service module exterior. That processor has direct DMA access to the secondary CAN bus governing the auxiliary reaction control thrusters. Once uploaded, CislunarOS will take autonomous command of the four ten-pound reaction control pods, determine the true state vector using the raw OpNav camera stream, and execute a forty-nine point five meter-per-second radial correction burn before the spacecraft enters the lunar occultation zone."
+"It doesn't run on the RAD750," Ryan explained. "It runs on the auxiliary optical communication processor—a modern ARM-based SoC integrated into the optical transceiver module on the service module exterior. That processor has direct DMA access to the secondary CAN bus governing the auxiliary reaction control thrusters. Once uploaded, ArgonautOS will take autonomous command of the four ten-pound reaction control pods, determine the true state vector using the raw OpNav camera stream, and execute a forty-nine point five meter-per-second radial correction burn before the spacecraft enters the lunar occultation zone."
 
 "It's a suicide pact," Arthur hissed. "We are handing control of an eight-billion-dollar crewed spacecraft to a script written in a garage!"
 
@@ -141,7 +141,7 @@ A long pause stretched across the UHF link, punctuated by the rhythmic hiss of s
 
 "...Negative thirty-eight?..." Wiseman replied, the professional composure momentarily fracturing. "...Houston, confirm negative thirty-eight? We don't have visual terrain altitude yet... OpNav shows green..."
 
-"OpNav is starving, Reid," Lin said. "We cannot command your AJ10 through the primary bus. We are about to lose Goldstone. In four minutes, Mount Stromlo in Australia is going to initiate an optical laser uplink to your auxiliary communications terminal. They are uploading an autonomous guidance core called CislunarOS. It will take command of your auxiliary RCS thrusters and execute a forty-nine point five meter-per-second burn. You will see an auxiliary takeover prompt on your cockpit display. You must flip the override toggle. Do not wait for Houston confirmation. If you don't authorize that burn, you will hit the ground before we acquire you on the other side."
+"OpNav is starving, Reid," Lin said. "We cannot command your AJ10 through the primary bus. We are about to lose Goldstone. In four minutes, Mount Stromlo in Australia is going to initiate an optical laser uplink to your auxiliary communications terminal. They are uploading an autonomous guidance core called ArgonautOS. It will take command of your auxiliary RCS thrusters and execute a forty-nine point five meter-per-second burn. You will see an auxiliary takeover prompt on your cockpit display. You must flip the override toggle. Do not wait for Houston confirmation. If you don't authorize that burn, you will hit the ground before we acquire you on the other side."
 
 "...Copy, Houston..." Wiseman’s voice faded as the signal-to-noise ratio plunged toward zero. "...Standing by for... laser acquisition... auxiliary override... armed... see you on the other side..."
 
@@ -169,7 +169,7 @@ Dr. Lachlan Mackay, Senior Optical Engineer for the Australian National Universi
 
 Beneath the primary mirror cell, in the temperature-controlled coudé room, a piezoelectric deformable mirror—a thin, flexible sheet of polished silica glass backed by ninety-seven electrostrictive ceramic actuators—was pulsing thousands of times a second. It was sensing the atmospheric turbulence in the thermal boundary layers above the Australian capital and flexing its surface to cancel the optical wavefront distortions, transforming a smeared, twinkling star image into a diffraction-limited optical point.
 
-"Mount Stromlo, this is Elena Rostova at Goddard," Elena's voice came through the dedicated trans-Pacific fiber link with zero latency. "Telemetry confirm, Lachlan. We have the payload staged in the local memory buffer. File name: `cislunar_os_core.elf`. Size: four hundred and eighty-two kilobytes. Checksum: `0x7F4A8C91`. Are you ready to arm the high-power transmitter?"
+"Mount Stromlo, this is Elena Rostova at Goddard," Elena's voice came through the dedicated trans-Pacific fiber link with zero latency. "Telemetry confirm, Lachlan. We have the payload staged in the local memory buffer. File name: `argonaut_os_core.elf`. Size: four hundred and eighty-two kilobytes. Checksum: `0x7F4A8C91`. Are you ready to arm the high-power transmitter?"
 
 Mackay looked at the key-switch on the laser safety interlock panel. A red tag dangled from the brass tumbler: `DANGER: CLASS 4 COVERT LASER RADIATION - EYE HAZARD AT 500 KM`.
 
@@ -203,7 +203,7 @@ The photons focused onto a high-speed InGaAs avalanche photodiode, triggering an
 [OCTA-RX] OPTICAL CARRIER LOCKED: 1550.12 nm
 [OCTA-RX] SIGNAL-TO-NOISE RATIO: +18.4 dB
 [OCTA-RX] INCOMING BITSTREAM: 100.0 Mbps
-[DMA-ENGINE] INCOMING PACKET STREAM: CISLUNAR_OS_CORE.ELF
+[DMA-ENGINE] INCOMING PACKET STREAM: ARGONAUT_OS_CORE.ELF
 [DMA-ENGINE] WRITING TO FLASH BLOCK 0x00400000...
 ```
 
@@ -216,7 +216,7 @@ In the auxiliary communication processor's non-volatile memory, the cyclic redun
 [CRC32] EXPECTED: 0x7F4A8C91
 [CRC32] INTEGRITY VERIFIED: 100% MATCH
 [EXEC] OVERRIDING GUIDANCE ARBITER...
-[EXEC] CISLUNAROS INITIALIZING IN ISOLATED MEMORY PARTITION...
+[EXEC] ARGONAUTOS INITIALIZING IN ISOLATED MEMORY PARTITION...
 ```
 
 The software was alive.
@@ -364,7 +364,7 @@ Marcus Thorne let out a long, ragged breath that sounded like a sob. He leaned f
 
 On his console, the telemetry stream displayed the signature of the software that had flown the ship through the dark:
 
-`GNC-CORE: CISLUNAROS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF`
+`GNC-CORE: ARGONAUTOS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF`
 
 Marcus reached over to his private phone, dialed the Blacksburg garage, and whispered into the receiver:
 

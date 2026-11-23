@@ -188,7 +188,7 @@ At 06:14 UTC, its four-thousand-newton main engine ignited for the departure bur
 
 Once the burn was complete, the empty departure stage detached with a pyrotechnic severing collar, drifting away into the deep dark.
 
-What remained was the cruise vehicle: a compact, one-hundred-and-sixty-five-kilogram stack comprising Canister 1, its cold-gas attitude control thrusters, an X-ray pulsar timing array, and an onboard guidance computer running CislunarOS.
+What remained was the cruise vehicle: a compact, one-hundred-and-sixty-five-kilogram stack comprising Canister 1, its cold-gas attitude control thrusters, an X-ray pulsar timing array, and an onboard guidance computer running ArgonautOS.
 
 And then, the radio fell completely silent.
 

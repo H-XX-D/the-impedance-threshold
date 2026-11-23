@@ -345,7 +345,7 @@ For two hours, the 7-watt board chewed through 5,760 half-hour guidance cycles, 
 When the run completed, the terminal displayed:
 
 `============================================================`  
-`CISLUNAR_OS 120-DAY LOW LUNAR ORBIT RESIDENCE TEST`  
+`ARGONAUT_OS 120-DAY LOW LUNAR ORBIT RESIDENCE TEST`  
 `TOTAL DURATION: 120 DAYS (5,760 DECISION CYCLES)`  
 `STATION-KEEPING DELTA-V: 166.9 M/S (0.035 KG PROPELLANT EQUIVALENT)`  
 `FINAL POSITION ERROR: 0.435 METERS`  

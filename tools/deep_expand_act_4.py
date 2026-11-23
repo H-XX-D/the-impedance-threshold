@@ -260,7 +260,7 @@ There were no active telemetry streams, no continuous radar beacons, no ground-c
 
 Navigation was conducted entirely by the onboard autonomous square-root information filter, processing X-ray pulse arrival times from four galactic pulsars: **PSR J0437-4715**, **PSR B1821-24**, **PSR B1937+21**, and **PSR J0030+0451**. 
 
-By comparing the pulse phases against its internal rubidium atomic clock, CislunarOS maintained the spacecraft's position within twelve meters across hundreds of millions of miles of empty space.
+By comparing the pulse phases against its internal rubidium atomic clock, ArgonautOS maintained the spacecraft's position within twelve meters across hundreds of millions of miles of empty space.
 
 ### The Washington Ambush
 
@@ -332,7 +332,7 @@ Ten minutes later, Ryan was leaning over the dining table, staring in stunned si
 
 "Solar radiation pressure asymmetry," Ryan breathed, his mind rapidly tracing the mathematical proof. "The photon torque is integrating across the orbital transfer arc. Elena... you're completely right."
 
-Elena looked up at her father, her dark eyes clear and steady. "I already wrote the autonomous attitude trim patch, Dad. If we command CislunarOS to bias the solar array cant angle by two point eight degrees toward the anti-solar vector, the aerodynamic photon pressure balances out to zero."
+Elena looked up at her father, her dark eyes clear and steady. "I already wrote the autonomous attitude trim patch, Dad. If we command ArgonautOS to bias the solar array cant angle by two point eight degrees toward the anti-solar vector, the aerodynamic photon pressure balances out to zero."
 
 Ryan looked at his sixteen-year-old daughter, a deep, overwhelming wave of pride washing over him.
 
@@ -392,7 +392,7 @@ A cheer rippled through the flight room, but Ryan Vance held up a hand.
 
 In conventional orbital mechanics, capturing a spacecraft from a high-eccentricity Earth orbit into the Near-Rectilinear Halo Orbit (NRHO) of Lunar Gateway would have required another massive rocket burn of over eight hundred meters per second—propellant the lightweight Return Stack simply did not carry.
 
-Instead, CislunarOS was executing a **Three-Body Invariant Manifold Capture**.
+Instead, ArgonautOS was executing a **Three-Body Invariant Manifold Capture**.
 
 As the Return Stack climbed toward the Moon's orbital distance along its highly elliptical capture orbit, it approached the collinear Lagrange point $L_1$—the gravitational saddle point between Earth and Moon.
 

@@ -381,7 +381,7 @@ The auxiliary optical transceiver woke up:
 [OPT-RX] 1550 nm Carrier Acquired. SNR: +18.4 dB.
 [OPT-RX] Pulse-Position Modulation (PPM-16) Synchronized.
 [OPT-RX] Incoming Bitstream: 1.2 Megabits per second.
-[OPT-RX] Receiving: cislunar_os_core.elf (482 KB)
+[OPT-RX] Receiving: argonaut_os_core.elf (482 KB)
 [OPT-RX] SHA-256 Checksum: VERIFIED.
 [OPT-RX] Executing Auxiliary Bootloader...
 ```

@@ -213,7 +213,7 @@ Silence stretched across the phone line, punctuated only by the hum of the cooli
 
 "What do we upload?" Elena asked, her heart hammering against her ribs. "A patch to the RAD750 EKF? The source code isn't even compiled for PowerPC."
 
-"You don't patch the EKF," Ryan said. He looked down at the Jetson Orin Nano sitting on his workbench. On its solid-state drive sat a four-hundred-and-eighty-two-kilobyte compiled binary: `cislunar_os_core.elf`. "You upload CislunarOS. You take the guidance executive away from the floating-point filter entirely. The Square Root Information Filter runs in 32-bit integer arithmetic. It cannot lose rank. It cannot evaluate a negative variance. It will solve their trajectory in twelve milliseconds."
+"You don't patch the EKF," Ryan said. He looked down at the Jetson Orin Nano sitting on his workbench. On its solid-state drive sat a four-hundred-and-eighty-two-kilobyte compiled binary: `argonaut_os_core.elf`. "You upload ArgonautOS. You take the guidance executive away from the floating-point filter entirely. The Square Root Information Filter runs in 32-bit integer arithmetic. It cannot lose rank. It cannot evaluate a negative variance. It will solve their trajectory in twelve milliseconds."
 """
 
 CH07 = r"""# CHAPTER SEVEN
@@ -262,7 +262,7 @@ Arthur groaned audibly. "Sarah, do not entertain this. Ryan Vance was forced out
 
 "What is the uplink bandwidth?" Marcus asked.
 
-"Two hundred megabits per second," Elena replied. "Enough to send the entire Library of Congress in three minutes. But we don't need three minutes. Ryan Vance has compiled the autonomous integer guidance core of CislunarOS into a four-hundred-and-eighty-two-kilobyte ELF binary."
+"Two hundred megabits per second," Elena replied. "Enough to send the entire Library of Congress in three minutes. But we don't need three minutes. Ryan Vance has compiled the autonomous integer guidance core of ArgonautOS into a four-hundred-and-eighty-two-kilobyte ELF binary."
 
 "Tell me about the code, Dr. Vance," Sarah Lin said, her eyes fixed on the speakerphone.
 
@@ -272,7 +272,7 @@ Through the wire, Ryan Vance’s voice was calm, measured, and shockingly direct
 
 "Can it execute on the vehicle?" Lin asked. "The RAD750 is an ancient architecture."
 
-"It doesn't run on the RAD750," Ryan explained. "It runs on the auxiliary optical communication processor—a modern ARM-based SoC integrated into the optical transceiver module on the service module exterior. That processor has direct DMA access to the secondary CAN bus governing the auxiliary reaction control thrusters. Once uploaded, CislunarOS will take autonomous command of the four ten-pound reaction control pods, determine the true state vector using the raw OpNav camera stream, and execute a forty-nine point five meter-per-second radial correction burn before the spacecraft enters the lunar occultation zone."
+"It doesn't run on the RAD750," Ryan explained. "It runs on the auxiliary optical communication processor—a modern ARM-based SoC integrated into the optical transceiver module on the service module exterior. That processor has direct DMA access to the secondary CAN bus governing the auxiliary reaction control thrusters. Once uploaded, ArgonautOS will take autonomous command of the four ten-pound reaction control pods, determine the true state vector using the raw OpNav camera stream, and execute a forty-nine point five meter-per-second radial correction burn before the spacecraft enters the lunar occultation zone."
 
 "It's a suicide pact," Arthur hissed. "We are handing control of an eight-billion-dollar crewed spacecraft to a script written in a garage!"
 
@@ -343,7 +343,7 @@ Dr. Lachlan Mackay, Senior Optical Engineer for the Australian National Universi
 
 Beneath the primary mirror cell, a piezoelectric deformable mirror—a thin, flexible sheet of polished glass backed by ninety-seven ceramic actuators—was pulsing thousands of times a second. It was sensing the atmospheric turbulence in the thermal layers above the Australian capital and flexing its surface to cancel the wavefront distortions, transforming a smeared, twinkling star image into a diffraction-limited optical point.
 
-"Mount Stromlo, this is Elena Rostova at Goddard," Elena's voice came through the fiber link with zero latency. "Telemetry confirm, Lachlan. We have the payload staged. File name: `cislunar_os_core.elf`. Size: four hundred and eighty-two kilobytes. Checksum: `0x7F4A8C91`. Are you ready to arm the high-power transmitter?"
+"Mount Stromlo, this is Elena Rostova at Goddard," Elena's voice came through the fiber link with zero latency. "Telemetry confirm, Lachlan. We have the payload staged. File name: `argonaut_os_core.elf`. Size: four hundred and eighty-two kilobytes. Checksum: `0x7F4A8C91`. Are you ready to arm the high-power transmitter?"
 
 Mackay looked at the key-switch on the interlock panel. A red tag dangled from the brass tumbler: `DANGER: CLASS 4 COVERT LASER RADIATION - EYE HAZARD AT 500 KM`.
 
@@ -377,7 +377,7 @@ The photons focused onto a high-speed InGaAs avalanche photodiode, triggering an
 [OCTA-RX] OPTICAL CARRIER LOCKED: 1550.12 nm
 [OCTA-RX] SIGNAL-TO-NOISE RATIO: +18.4 dB
 [OCTA-RX] INCOMING BITSTREAM: 100.0 Mbps
-[DMA-ENGINE] INCOMING PACKET STREAM: CISLUNAR_OS_CORE.ELF
+[DMA-ENGINE] INCOMING PACKET STREAM: ARGONAUT_OS_CORE.ELF
 [DMA-ENGINE] WRITING TO FLASH BLOCK 0x00400000...
 ```
 
@@ -390,7 +390,7 @@ In the auxiliary communication processor's non-volatile memory, the cyclic redun
 [CRC32] EXPECTED: 0x7F4A8C91
 [CRC32] INTEGRITY VERIFIED: 100% MATCH
 [EXEC] OVERRIDING GUIDANCE ARBITER...
-[EXEC] CISLUNAROS INITIALIZING IN ISOLATED MEMORY PARTITION...
+[EXEC] ARGONAUTOS INITIALIZING IN ISOLATED MEMORY PARTITION...
 ```
 
 The software was alive.
@@ -540,7 +540,7 @@ Marcus Thorne let out a long, ragged breath that sounded like a sob. He leaned f
 
 On his console, the telemetry stream displayed the signature of the software that had flown the ship through the dark:
 
-`GNC-CORE: CISLUNAROS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF`
+`GNC-CORE: ARGONAUTOS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF`
 
 Marcus reached over to his private phone, dialed the Blacksburg garage, and whispered into the receiver:
 

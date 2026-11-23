@@ -40,7 +40,7 @@ Whenever a high-energy heavy ion punched through a logic gate, depositing thousa
 `AVIONICS_TEMPERATURE: 68.2 KELVIN`  
 `GUIDANCE_SOLUTION: 100% OPERATIONAL`  
 
-"The FD-SOI chips are laughing at the radiation," Ryan Vance observed from Callisto. "CislunarOS is propagating the trajectory without a single dropped state vector."
+"The FD-SOI chips are laughing at the radiation," Ryan Vance observed from Callisto. "ArgonautOS is propagating the trajectory without a single dropped state vector."
 
 ### The Cracking World
 
@@ -280,7 +280,7 @@ A bright spear of orange flame illuminated the underside of the craft as nitroge
 
 "Now comes the manifold," Ryan said, his eyes fixed on the three-body phase space trajectory.
 
-Instead of burning massive amounts of fuel to match velocities with Lunar Gateway, the Return Stack was flying a trajectory designed by CislunarOS: an invariant stable manifold capture. 
+Instead of burning massive amounts of fuel to match velocities with Lunar Gateway, the Return Stack was flying a trajectory designed by ArgonautOS: an invariant stable manifold capture. 
 
 As the craft climbed toward the Moon's orbital distance, the gravitational pull of the Earth and the Moon reached an exact dynamical balance near the collinear Lagrange point $L_1$. The spacecraft slipped into the funnel of the invariant manifold like a train gliding effortlessly onto a siding switch.
 

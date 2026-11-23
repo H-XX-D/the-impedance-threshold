@@ -234,11 +234,11 @@ Sarah tapped her headset. "Who is this?"
 
 Sarah frowned, looking across the room at the Russian-born specialist. "Elena, this is not the time for payload experiments."
 
-"Listen to me, Sarah," Elena said, stepping forward so that her voice carried across the silent room. "When we qualified Artemis-7, we installed an auxiliary experimental navigation package on the secondary science bus under Safety Protocol 14-B. It's an NVIDIA Jetson Orin Nano running CislunarOS, built by Dr. Ryan Vance."
+"Listen to me, Sarah," Elena said, stepping forward so that her voice carried across the silent room. "When we qualified Artemis-7, we installed an auxiliary experimental navigation package on the secondary science bus under Safety Protocol 14-B. It's an NVIDIA Jetson Orin Nano running ArgonautOS, built by Dr. Ryan Vance."
 
 Marcus Thorne looked up. "The edge board from the Plum Brook cold-vacuum tests?"
 
-"The board draws seven watts," Elena said. "It has been receiving raw 1553 bus telemetry since liftoff. It does not use Cartesian coordinates, and it does not use a classical Kalman filter. It runs a Square-Root Information Filter on Jacobi shape coordinates. While the Honeywell computer was starving its covariance, CislunarOS tracked the true physical trajectory to within fifty meters."
+"The board draws seven watts," Elena said. "It has been receiving raw 1553 bus telemetry since liftoff. It does not use Cartesian coordinates, and it does not use a classical Kalman filter. It runs a Square-Root Information Filter on Jacobi shape coordinates. While the Honeywell computer was starving its covariance, ArgonautOS tracked the true physical trajectory to within fifty meters."
 
 "Does it have thruster authority?" Sarah asked bluntly.
 
@@ -281,7 +281,7 @@ Elena Rostova rested her fingers on the terminal keyboard.
 On her screen sat the 128-byte binary authorization sequence, signed with Ryan Vance’s personal cryptographic key from the Blacksburg workshop:
 
 ```
-[AUTHENTICATED CISLUNAROS RECOVERY COMMAND]
+[AUTHENTICATED ARGONAUTOS RECOVERY COMMAND]
 PAYLOAD_ID:           AUX_GNC_SLOT_14B (JETSON ORIN NANO)
 AUTHORITY TOKEN 1:    0x7A9F... (TAKEOVER_PRIMARY_BUS)
 AUTHORITY TOKEN 2:    0x4C12... (STAGE_RECOVERY_BURN)
@@ -300,7 +300,7 @@ Inside the electronics bay of *Prometheus*, the optocoupler clicked.
 
 A blue status LED on the Jetson Orin Nano illuminated:
 ```
-[CISLUNAROS EXEC: CRYPTOGRAPHIC AUTHORITY VERIFIED]
+[ARGONAUTOS EXEC: CRYPTOGRAPHIC AUTHORITY VERIFIED]
 PRIMARY BUS OVERRIDE: ENGAGED
 HONEYWELL GNC STATUS: ISOLATED (COMMAND AUTHORITY TRANSFERRED)
 SRIF NAV FILTER: ACTIVATED // 0D RELATIONAL TRACKING RESTORED
@@ -331,12 +331,12 @@ PREDICTED PERILUNE:       112.4 km (CLEARANCE: +112.4 km)
 
 For forty-eight point two seconds, the seven-watt computer held the four-ton spacecraft in an iron relational grip.
 
-Using only its internal Square-Root Information Filter and the optical bearing to the lunar limb, CislunarOS continuously modulated the thruster pulses, adjusting for propellant tank slosh and center-of-mass migration.
+Using only its internal Square-Root Information Filter and the optical bearing to the lunar limb, ArgonautOS continuously modulated the thruster pulses, adjusting for propellant tank slosh and center-of-mass migration.
 
 At 04:49:18 UTC, the engine shut down.
 
 ```
-[CISLUNAROS GNC: BURN COMPLETE // RESIDUAL DELTA-V: 0.012 m/s]
+[ARGONAUTOS GNC: BURN COMPLETE // RESIDUAL DELTA-V: 0.012 m/s]
 NEW TRAJECTORY PARAMETERS:
   PERILUNE ALTITUDE:      112.38 km
   TIME TO PERILUNE:       05:36:00 UTC

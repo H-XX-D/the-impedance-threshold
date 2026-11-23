@@ -14,15 +14,15 @@
 * **MET 50:36:14 (16:48 UTC):** Register `r14` of RAD750 Computer A underflows. Radial velocity variance evaluates to $-0.000412\text{ m}^2/\text{s}^2$. Normalized Innovation Squared evaluates to $-287.412$.
 * **MET 50:36:15 (16:48 UTC):** Computer A disqualifies itself. Computer B fails identically in 40 ms. Computer C enters infinite divide loop. Primary guidance locked in `PROTECTIVE_SCREENED_COAST`.
 * **MET 52:00:00 (18:12 UTC):** Ballistic trajectory propagation indicates perilune altitude $-38.42\text{ km}$ (farside impact at crater Daedalus).
-* **MET 54:06:00 (20:18 UTC):** Mount Stromlo fires 1550 nm laser uplink. 482 KB `cislunar_os_core.elf` loaded into Auxiliary Transceiver.
-* **MET 54:06:02 (20:18 UTC):** CislunarOS boots in 5.12W partition. Householder SRIF reacquires attitude. FixedQP computes TCM-3.
+* **MET 54:06:00 (20:18 UTC):** Mount Stromlo fires 1550 nm laser uplink. 482 KB `argonaut_os_core.elf` loaded into Auxiliary Transceiver.
+* **MET 54:06:02 (20:18 UTC):** ArgonautOS boots in 5.12W partition. Householder SRIF reacquires attitude. FixedQP computes TCM-3.
 * **MET 54:06:20 (20:18 UTC):** TCM-3 executed: $\Delta V = 49.524\text{ m/s}$. Perilune altitude raised to $+112.44\text{ km}$. Mission saved.
 
 ---
 
 ### 2.0 HARDWARE COMPARISON MATRIX: TRIPLE-REDUNDANT MAINFRAME VS. EDGE CORE
 
-| Avionics Parameter | BAE RAD750 Flight Mainframe (Primary) | NVIDIA Jetson Orin Nano / CislunarOS (Auxiliary) |
+| Avionics Parameter | BAE RAD750 Flight Mainframe (Primary) | NVIDIA Jetson Orin Nano / ArgonautOS (Auxiliary) |
 | :--- | :--- | :--- |
 | **Processor Architecture** | 133 MHz PowerPC 750GL (32-bit SOI) | 6-Core ARM Cortex-A78AE + Ampere Tensor Core |
 | **Operating Power Draw** | $28.5 \text{ Watts}$ per channel ($85.5 \text{ W}$ total) | **$5.12 \text{ Watts}$** (5W Low-Power Mode) |

@@ -204,7 +204,7 @@ Series}
   metrologist, and Lead Guidance, Navigation, and Control (GNC)
   Architect for Project ARGONAUT. Originator of the Quantum Relational
   Causality (QRC) theoretical framework. Former post-doctoral researcher
-  at Green Bank Observatory. Independent developer of CislunarOS on edge
+  at Green Bank Observatory. Independent developer of ArgonautOS on edge
   silicon. Driven by an uncompromising reverence for physical clocks and
   measurable relations.
 \item
@@ -274,8 +274,8 @@ Cartesian stage upon which the drama of matter and radiation unfolds.
 Sir Isaac Newton called it absolute space---an immovable, infinite
 sensorium. Albert Einstein shattered that illusion. General Relativity
 proved that spacetime has no independent existence apart from physical
-relations, proper times, and clocks. \textbf{Einstein was right.}
-Geometry is dynamic, and space and time are relational.
+relations, proper times, and clocks. Geometry is dynamic, and space and
+time are relational.
 
 Yet over the ensuing century, applied physics and flight software
 quietly drifted back into classical habits. Practitioners treated
@@ -2603,8 +2603,8 @@ for PowerPC.''
 ``You don't patch the EKF,'' Ryan said. He looked down at the Jetson
 Orin Nano sitting on his workbench. On its solid-state drive sat a
 four-hundred-and-eighty-two-kilobyte compiled binary:
-\passthrough{\lstinline!cislunar\_os\_core.elf!}. ``You upload
-CislunarOS. You take the guidance executive away from the floating-point
+\passthrough{\lstinline!argonaut\_os\_core.elf!}. ``You upload
+ArgonautOS. You take the guidance executive away from the floating-point
 filter entirely. The Square Root Information Filter runs in 32-bit
 integer arithmetic. It cannot lose rank. It cannot evaluate a negative
 variance. It will solve their trajectory in twelve milliseconds.''
@@ -2727,7 +2727,7 @@ racing.
 ``Two hundred megabits per second,'' Elena replied. ``Enough to send the
 entire Library of Congress in three minutes. But we don't need three
 minutes. Ryan Vance has compiled the autonomous integer guidance core of
-CislunarOS into a four-hundred-and-eighty-two-kilobyte ELF binary.''
+ArgonautOS into a four-hundred-and-eighty-two-kilobyte ELF binary.''
 
 ``Tell me about the code, Dr.~Vance,'' Sarah Lin said, her eyes fixed on
 the speakerphone.
@@ -2758,7 +2758,7 @@ auxiliary optical communication processor---a modern ARM-based SoC
 integrated into the optical transceiver module on the service module
 exterior. That processor has direct DMA access to the secondary CAN bus
 governing the auxiliary reaction control thrusters. Once uploaded,
-CislunarOS will take autonomous command of the four ten-pound reaction
+ArgonautOS will take autonomous command of the four ten-pound reaction
 control pods, determine the true state vector using the raw OpNav camera
 stream, and execute a forty-nine point five meter-per-second radial
 correction burn before the spacecraft enters the lunar occultation
@@ -2900,7 +2900,7 @@ OpNav shows green\ldots{}''
 through the primary bus. We are about to lose Goldstone. In four
 minutes, Mount Stromlo in Australia is going to initiate an optical
 laser uplink to your auxiliary communications terminal. They are
-uploading an autonomous guidance core called CislunarOS. It will take
+uploading an autonomous guidance core called ArgonautOS. It will take
 command of your auxiliary RCS thrusters and execute a forty-nine point
 five meter-per-second burn. You will see an auxiliary takeover prompt on
 your cockpit display. You must flip the override toggle. Do not wait for
@@ -2970,7 +2970,7 @@ a diffraction-limited optical point.
 through the dedicated trans-Pacific fiber link with zero latency.
 ``Telemetry confirm, Lachlan. We have the payload staged in the local
 memory buffer. File name:
-\passthrough{\lstinline!cislunar\_os\_core.elf!}. Size: four hundred and
+\passthrough{\lstinline!argonaut\_os\_core.elf!}. Size: four hundred and
 eighty-two kilobytes. Checksum: \passthrough{\lstinline!0x7F4A8C91!}.
 Are you ready to arm the high-power transmitter?''
 
@@ -3033,7 +3033,7 @@ into a differential digital bitstream:
 [OCTA-RX] OPTICAL CARRIER LOCKED: 1550.12 nm
 [OCTA-RX] SIGNAL-TO-NOISE RATIO: +18.4 dB
 [OCTA-RX] INCOMING BITSTREAM: 100.0 Mbps
-[DMA-ENGINE] INCOMING PACKET STREAM: CISLUNAR_OS_CORE.ELF
+[DMA-ENGINE] INCOMING PACKET STREAM: ARGONAUT_OS_CORE.ELF
 [DMA-ENGINE] WRITING TO FLASH BLOCK 0x00400000...
 \end{lstlisting}
 
@@ -3047,7 +3047,7 @@ cyclic redundancy check evaluated the downloaded payload:
 [CRC32] EXPECTED: 0x7F4A8C91
 [CRC32] INTEGRITY VERIFIED: 100% MATCH
 [EXEC] OVERRIDING GUIDANCE ARBITER...
-[EXEC] CISLUNAROS INITIALIZING IN ISOLATED MEMORY PARTITION...
+[EXEC] ARGONAUTOS INITIALIZING IN ISOLATED MEMORY PARTITION...
 \end{lstlisting}
 
 The software was alive.
@@ -3249,7 +3249,7 @@ monitor, and closed his eyes.
 On his console, the telemetry stream displayed the signature of the
 software that had flown the ship through the dark:
 
-\passthrough{\lstinline!GNC-CORE: CISLUNAROS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF!}
+\passthrough{\lstinline!GNC-CORE: ARGONAUTOS REV 6.1 // AUTHOR: DR. RYAN VANCE // INTEG-SRIF!}
 
 Marcus reached over to his private phone, dialed the Blacksburg garage,
 and whispered into the receiver:
@@ -3307,10 +3307,10 @@ FLARE}
   crater Daedalus).
 \item
   \textbf{MET 54:06:00 (20:18 UTC):} Mount Stromlo fires 1550 nm laser
-  uplink. 482 KB \passthrough{\lstinline!cislunar\_os\_core.elf!} loaded
+  uplink. 482 KB \passthrough{\lstinline!argonaut\_os\_core.elf!} loaded
   into Auxiliary Transceiver.
 \item
-  \textbf{MET 54:06:02 (20:18 UTC):} CislunarOS boots in 5.12W
+  \textbf{MET 54:06:02 (20:18 UTC):} ArgonautOS boots in 5.12W
   partition. Householder SRIF reacquires attitude. FixedQP computes
   TCM-3.
 \item
@@ -3336,7 +3336,7 @@ Avionics Parameter
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 BAE RAD750 Flight Mainframe (Primary)
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-NVIDIA Jetson Orin Nano / CislunarOS (Auxiliary)
+NVIDIA Jetson Orin Nano / ArgonautOS (Auxiliary)
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
@@ -4122,7 +4122,7 @@ At burnout, the telemetry terminal locked its final injection velocity:
 [EUS-CUTOFF] TIME OF FLIGHT:     3.2 YEARS (DIRECT TRAJECTORY)
 [PAYLOAD-SEP] ARGONAUT VEHICLE SEPARATED FROM ADAPTER
 [PAYLOAD-SEP] HIGH-GAIN SOLAR ARRAYS DEPLOYED: NOMINAL
-[PAYLOAD-SEP] CislunarOS CORE INITIALIZED: LOCK ACQUIRED
+[PAYLOAD-SEP] ARGONAUTOS CORE INITIALIZED: LOCK ACQUIRED
 \end{lstlisting}
 
 The spacecraft had severed its physical ties to Earth.
@@ -4376,7 +4376,7 @@ trajectory insertion---depended exclusively on the thirty-two-bit
 integer guidance core embedded in its 28-nanometer FD-SOI processor.
 
 \begin{lstlisting}
-[EXEC] CISLUNAROS REVISION 7.4 ENGAGED.
+[EXEC] ARGONAUTOS REVISION 7.4 ENGAGED.
 [EXEC] SENSORS ONLINE: SAGNAC GYROS, OPNAV STAR TRACKER, UV SENSOR.
 [EXEC] TARGET: EUROPA PLUME #3 INTERCEPT.
 [EXEC] PLANNED TRAJECTORY: BALLISTIC DIVE (112 HOURS).
@@ -6229,7 +6229,7 @@ years earlier.
 ephemeris tables. Zero floating-point covariance matrices. The ship
 navigates strictly by the causal phase delays of seventy-two millisecond
 pulsars and local Sagnac optical ring-laser interferometry. It uses
-CislunarOS Revision 44.''
+ArgonautOS Revision 44.''
 
 She reached out and took her father's hand, her fingers warm against his
 weathered skin.
@@ -6470,7 +6470,7 @@ undetected, committing corrupted state vectors to the flight executive.
 \sceneheader{2.0 THE HOUSEHOLDER QR SQUARE-ROOT INFORMATION FILTER
 (SRIF)}
 
-In CislunarOS, developed by Dr.~Ryan Vance, covariance matrices are
+In ArgonautOS, developed by Dr.~Ryan Vance, covariance matrices are
 completely discarded. The state uncertainty is parameterized strictly by
 the upper-triangular \textbf{Square-Root Information Matrix}
 \(\mathbf{R}\), where \(\mathbf{P}^{-1} = \mathbf{R}^T \mathbf{R}\), and
@@ -6478,7 +6478,7 @@ the information vector \(\mathbf{z} = \mathbf{R} \hat{\mathbf{x}}\).
 
 \begin{lstlisting}[language={C++}]
 // =============================================================================
-// CISLUNAROS REVISION 6.1: SQUARE-ROOT INFORMATION FILTER (SRIF) CORE
+// ARGONAUTOS REVISION 6.1: SQUARE-ROOT INFORMATION FILTER (SRIF) CORE
 // Implementation: Householder QR Factorization for 0D Relational State Updates
 // Hardware Target: 28nm FD-SOI / NVIDIA Jetson Orin Nano (7.2 W Budget)
 // Author: Dr. Ryan Vance // Verified by Todd Hendrixx
@@ -6705,11 +6705,11 @@ The relational transmission impedance of the channel is:
 measurement of causal impedance. Causal impedance does not cause a
 separate substance called distance.}
 
-\textbf{Einstein Was Right:} General Relativity proved that spacetime
-has no independent existence apart from physical relations, proper
-times, and clocks. Gravitational time dilation and Shapiro delay do not
-represent an elastic fabric bending in a void, but the physical causal
-impedance matching of relational clock networks.
+General Relativity proved that spacetime has no independent existence
+apart from physical relations, proper times, and clocks. Gravitational
+time dilation and Shapiro delay do not represent an elastic fabric
+bending in a void, but the physical causal impedance matching of
+relational clock networks.
 
 \dinkus
 

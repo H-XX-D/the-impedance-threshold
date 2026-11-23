@@ -32,11 +32,11 @@ $$\chi^2 = \mathbf{y}^T \mathbf{S}^{-1} \mathbf{y}$$
 evaluates to negative values ($\chi^2 = -287.412$). In flight software where the measurement gate is implemented as a simple upper-bound inequality (`nis <= GATE_LIMIT`), negative NIS values pass undetected, committing corrupted state vectors to the flight executive.
 
 ### 2.0 THE HOUSEHOLDER QR SQUARE-ROOT INFORMATION FILTER (SRIF)
-In CislunarOS, developed by Dr. Ryan Vance, covariance matrices are completely discarded. The state uncertainty is parameterized strictly by the upper-triangular **Square-Root Information Matrix** $\mathbf{R}$, where $\mathbf{P}^{-1} = \mathbf{R}^T \mathbf{R}$, and the information vector $\mathbf{z} = \mathbf{R} \hat{\mathbf{x}}$.
+In ArgonautOS, developed by Dr. Ryan Vance, covariance matrices are completely discarded. The state uncertainty is parameterized strictly by the upper-triangular **Square-Root Information Matrix** $\mathbf{R}$, where $\mathbf{P}^{-1} = \mathbf{R}^T \mathbf{R}$, and the information vector $\mathbf{z} = \mathbf{R} \hat{\mathbf{x}}$.
 
 ```cpp
 // =============================================================================
-// CISLUNAROS REVISION 6.1: SQUARE-ROOT INFORMATION FILTER (SRIF) CORE
+// ARGONAUTOS REVISION 6.1: SQUARE-ROOT INFORMATION FILTER (SRIF) CORE
 // Implementation: Householder QR Factorization for 0D Relational State Updates
 // Hardware Target: 28nm FD-SOI / NVIDIA Jetson Orin Nano (7.2 W Budget)
 // Author: Dr. Ryan Vance // Verified by Todd Hendrixx

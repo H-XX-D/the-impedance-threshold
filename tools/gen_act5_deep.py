@@ -219,7 +219,7 @@ RUNG 2: SURFACE BIOSPHERES
 RUNG 3: TECHNOLOGICAL ENERGETICS
         Combustion, metallurgy, steam, fossil hydrocarbons, nuclear fission.
 RUNG 4: RELATIONAL METROLOGY & CISLUNAR INTEGRATION
-        Quantum Relational Causality (QRC), edge autonomous GNC (CislunarOS).
+        Quantum Relational Causality (QRC), edge autonomous GNC (ArgonautOS).
 RUNG 5: STELLAR HARVESTING & FUSION PROPULSION
         D-3He magnetic pinch torches, beamed laser momentum networks.
 RUNG 6: INTERSTELLAR EXPEDITIONARY SPECIES
@@ -376,7 +376,7 @@ TABLE 5.2: THE FOUR-CENTURY ROADMAP TO THE IAS DAEDALUS (2026–2450 AD)
 ================================================================================
 Phase / Century    Key Technological Milestone              Propulsion & GNC State
 --------------------------------------------------------------------------------
-Phase 1 (2020s)    QRC Formulation & CislunarOS (Artemis-7) 7W Edge Silicon / SRIF
+Phase 1 (2020s)    QRC Formulation & ArgonautOS (Artemis-7) 7W Edge Silicon / SRIF
 Phase 2 (2030s)    Project ARGONAUT & Callisto Staging      Graded Aerogel / Laser Seal
 Phase 3 (2040s)    Discovery of Europan PNA / IAS Charter   Invariant Manifold Cruise
 Phase 4 (2050s)    D-He3 Magnetic Pinch Fusion Torches     0.08 c Relativistic Exhaust
